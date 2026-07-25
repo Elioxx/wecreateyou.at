@@ -1,0 +1,20 @@
+User-agent: *
+Allow: /
+
+# Keine sensiblen/technischen Pfade indexieren
+Disallow: /contact.php
+
+# KI-/LLM-Crawler ausdrücklich erlauben (Sichtbarkeit in KI-Antworten)
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+Sitemap: https://wecreateyou.at/sitemap.xml

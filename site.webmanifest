@@ -1,0 +1,14 @@
+{
+  "name": "WeCreateYou – KI-Automatisierung für KMU",
+  "short_name": "WeCreateYou",
+  "description": "KI-gestützte Prozessautomatisierung und Digitalisierung für kleine und mittlere Unternehmen in Österreich.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a0a0f",
+  "theme_color": "#6528F7",
+  "icons": [
+    { "src": "/assets/og/favicon-32.png", "sizes": "32x32", "type": "image/png" },
+    { "src": "/assets/og/apple-touch-icon.png", "sizes": "180x180", "type": "image/png" },
+    { "src": "/assets/og/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ]
+}
