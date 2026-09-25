@@ -41,13 +41,18 @@ function initNavigation() {
     toggle.addEventListener('click', () => {
       toggle.classList.toggle('nav__toggle--active');
       mobileNav.classList.toggle('nav__mobile--active');
-      document.body.style.overflow = mobileNav.classList.contains('nav__mobile--active') ? 'hidden' : '';
+      const isOpen = mobileNav.classList.contains('nav__mobile--active');
+      toggle.setAttribute('aria-expanded', String(isOpen));
+      toggle.setAttribute('aria-label', isOpen ? 'Menü schließen' : 'Menü öffnen');
+      document.body.style.overflow = isOpen ? 'hidden' : '';
     });
 
     mobileLinks.forEach(link => {
       link.addEventListener('click', () => {
         toggle.classList.remove('nav__toggle--active');
         mobileNav.classList.remove('nav__mobile--active');
+        toggle.setAttribute('aria-expanded', 'false');
+        toggle.setAttribute('aria-label', 'Menü öffnen');
         document.body.style.overflow = '';
       });
     });
@@ -271,10 +276,10 @@ function initTypewriter() {
   const el = document.getElementById('typewriter-target');
   if (!el) return;
 
-  const words = ['automatisiert.', 'optimiert.', 'beschleunigt.', 'revolutioniert.'];
+  const words = ['Intelligent automatisiert.', 'Intelligent optimiert.', 'Spürbar beschleunigt.', 'Digital neu gedacht.'];
   let wordIndex = 0;
-  let charIndex = 0;
-  let isDeleting = false;
+  let charIndex = words[0].length;
+  let isDeleting = true;
   const cursor = el.querySelector('.typewriter-cursor');
 
   function type() {
@@ -315,12 +320,17 @@ function initFloatingCTA() {
 
   const heroSection = document.querySelector('.hero');
   const contactSection = document.getElementById('kontakt');
+  const conversionTargets = document.querySelectorAll('#hero-cta-primary, .digital-feature__cta, .process__cta, .contact-form__submit');
 
   window.addEventListener('scroll', () => {
     const heroBottom = heroSection ? heroSection.getBoundingClientRect().bottom : 0;
     const contactTop = contactSection ? contactSection.getBoundingClientRect().top : Infinity;
+    const anotherCtaVisible = Array.from(conversionTargets).some((element) => {
+      const rect = element.getBoundingClientRect();
+      return rect.bottom > 72 && rect.top < window.innerHeight - 24;
+    });
 
-    if (heroBottom < 0 && contactTop > window.innerHeight) {
+    if (heroBottom < 0 && contactTop > window.innerHeight && !anotherCtaVisible) {
       floatingCta.classList.add('floating-cta--visible');
     } else {
       floatingCta.classList.remove('floating-cta--visible');
@@ -363,7 +373,9 @@ document.addEventListener('submit', (e) => {
   btn.disabled = true;
   btn.style.opacity = '0.7';
 
-  fetch('contact.php', {
+  const endpoint = form.getAttribute('action') || '/contact.php';
+
+  fetch(endpoint, {
     method: 'POST',
     body: new FormData(form),
     headers: { 'Accept': 'application/json' },

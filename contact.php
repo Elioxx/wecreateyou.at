@@ -55,6 +55,7 @@ $branchLabels = [
     'steuerberater' => 'Steuerberater / Recht',
     'gesundheit'    => 'Gesundheitswesen',
     'immobilien'    => 'Immobilien',
+    'sonstige-digitale-dienstleistungen' => 'Sonstige digitale Dienstleistungen',
     'andere'        => 'Andere Branche',
 ];
 $branchLabel = $branchLabels[$branch] ?? ($branch !== '' ? $branch : '-');
