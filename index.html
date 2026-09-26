@@ -43,7 +43,7 @@
 
   <!-- Performance: Font preloaden (self-hosted, render-kritisch) -->
   <link rel="preload" href="assets/fonts/inter-latin-var.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="css/style.css?v=20260925j">
+  <link rel="stylesheet" href="css/style.css?v=20260926a">
 
   <!-- ===== Structured Data (JSON-LD) ===== -->
   <script type="application/ld+json">
@@ -1016,38 +1016,98 @@
     </section>
 
     <!-- ===== CASE STUDIES ===== -->
-    <section class="section section--dark" id="case-studies">
+    <section class="section section--dark case-studies-tech" id="case-studies">
       <div class="container">
         <div class="case-studies__header reveal">
           <span class="section-label">Eigenentwicklungen</span>
           <h2 class="section-title">Nicht nur Konzepte.<br><span class="text-gradient">Funktionierende Lösungen.</span></h2>
           <p class="section-subtitle">
-            Digitale Werkzeuge, die konkrete Engpässe beseitigen: weniger Tipparbeit, schnellere Reaktion und mehr Zeit für Kunden.
+            Keine Demo-Ideen, sondern individuell entwickelte Systeme für echte Abläufe – vom Lager über die Angebotserstellung bis zur Terminbuchung.
           </p>
         </div>
 
-        <!-- Case Study 1 -->
-        <div class="case-study reveal">
+        <!-- Case Study 1: PentaNova -->
+        <div class="case-study case-study--warehouse reveal">
           <div class="case-study__content">
-            <span class="case-study__tag">KI-Assistent für Angebote</span>
-            <h3 class="case-study__title">Angebote diktieren statt mühsam tippen</h3>
+            <div class="case-study__eyebrow"><span>SYSTEM / 01</span><strong>PENTANOVA</strong></div>
+            <span class="case-study__tag">Digitales Lager- & Verwaltungssystem</span>
+            <h3 class="case-study__title">Ein zentraler Überblick über Bestand, Produkte und Hersteller</h3>
             <p class="case-study__description">
-              Du sagst unserem KI-Assistenten einfach, was auf dem Angebot stehen soll – er erstellt daraus
-              in Sekunden ein fertiges, sauberes Angebot. Wie ein Kollege im Büro, der es einem perfekt
-              aufschreibt, nur eben ohne Wartezeit und ohne, dass es ein Mensch sein muss.
+              Für PentaNova haben wir ein geschütztes Verwaltungssystem entwickelt, das Lagerbestand,
+              Produktdaten, Kategorien und Hersteller an einem Ort zusammenführt. Statt verteilter Listen
+              arbeitet das Team mit einer klaren, durchsuchbaren Oberfläche.
             </p>
             <div class="case-study__metrics">
               <div class="case-study__metric">
-                <div class="case-study__metric-value">Diktieren</div>
-                <div class="case-study__metric-label">Statt mühsam tippen</div>
+                <div class="case-study__metric-value">Live-Bestand</div>
+                <div class="case-study__metric-label">Verfügbarkeit sofort sichtbar</div>
               </div>
               <div class="case-study__metric">
-                <div class="case-study__metric-value">Sekunden</div>
-                <div class="case-study__metric-label">Bis zum fertigen Angebot</div>
+                <div class="case-study__metric-value">Zentral</div>
+                <div class="case-study__metric-label">Produkte & Stammdaten verwalten</div>
               </div>
               <div class="case-study__metric">
-                <div class="case-study__metric-value">Startklar</div>
-                <div class="case-study__metric-label">Einsatzbereit für den Echtbetrieb</div>
+                <div class="case-study__metric-value">Geschützt</div>
+                <div class="case-study__metric-label">Zugriff nur für das Team</div>
+              </div>
+            </div>
+          </div>
+          <div class="case-study__visual">
+            <div class="case-study__mockup warehouse-ui">
+              <div class="case-study__mockup-bar">
+                <span class="case-study__mockup-dot"></span>
+                <span class="case-study__mockup-dot"></span>
+                <span class="case-study__mockup-dot"></span>
+                <span class="case-study__mockup-title">PENTANOVA · ATLANTA STORAGE</span>
+                <span class="case-study__mockup-status"><span class="case-study__mockup-status-dot"></span>System online</span>
+              </div>
+              <div class="warehouse-ui__shell">
+                <aside class="warehouse-ui__nav" aria-hidden="true">
+                  <b>PN</b><span class="is-active">▦</span><span>◫</span><span>◈</span>
+                </aside>
+                <div class="warehouse-ui__main">
+                  <div class="warehouse-ui__head"><div><small>ATLANTA STORAGE</small><strong>1.020 products found</strong></div><span>⌕ Search inventory</span></div>
+                  <div class="warehouse-ui__stats">
+                    <div><small>CABLES</small><strong>321</strong><em>Produkte</em></div>
+                    <div><small>CONNECTORS</small><strong>141</strong><em>Produkte</em></div>
+                    <div><small>STATUS</small><strong class="is-green">In Stock</strong><em>Live gefiltert</em></div>
+                  </div>
+                  <div class="warehouse-ui__table">
+                    <div class="warehouse-ui__row warehouse-ui__row--head"><span>SKU / PRODUCT</span><span>CATEGORY</span><span>STOCK</span><span>STATUS</span></div>
+                    <div class="warehouse-ui__row"><span><b>FLM 10X25 F</b><small>Mushroom-head bolt M10</small></span><span>Metal Hardware</span><span>50 pcs</span><span class="stock-ok">In stock</span></div>
+                    <div class="warehouse-ui__row"><span><b>601403</b><small>ÖLFLEX® 190 3G2.5 14/3C</small></span><span>Cables · LAPP</span><span>1453 m</span><span class="stock-ok">In stock</span></div>
+                    <div class="warehouse-ui__row"><span><b>6ES7131</b><small>SIMATIC ET 200S Module</small></span><span>Sensors & Automation</span><span>4 pcs</span><span class="stock-low">Low stock</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a href="https://pentanova.wecreateyou.website/" target="_blank" rel="noopener" class="btn btn--secondary case-study__cta">PentaNova öffnen <span class="btn-arrow">↗</span></a>
+        </div>
+
+        <!-- Case Study 2 -->
+        <div class="case-study reveal">
+          <div class="case-study__content">
+            <div class="case-study__eyebrow"><span>SYSTEM / 02</span><strong>KUNDENLÖSUNG · HANDWERK</strong></div>
+            <span class="case-study__tag">KI-Assistent für Angebotserstellung</span>
+            <h3 class="case-study__title">Angebote direkt von der Baustelle vorbereiten</h3>
+            <p class="case-study__description">
+              Für einen Handwerksbetrieb haben wir einen KI-Assistenten entwickelt, der gesprochene
+              Leistungsangaben in einen strukturierten Angebotsentwurf übersetzt. So kann der Techniker
+              den Auftrag vor Ort erfassen, während das Büro sofort mit sauberen Daten weiterarbeitet.
+            </p>
+            <div class="case-study__metrics">
+              <div class="case-study__metric">
+                <div class="case-study__metric-value">Sprachinput</div>
+                <div class="case-study__metric-label">Direkt auf der Baustelle</div>
+              </div>
+              <div class="case-study__metric">
+                <div class="case-study__metric-value">Strukturiert</div>
+                <div class="case-study__metric-label">Positionen sauber vorbereitet</div>
+              </div>
+              <div class="case-study__metric">
+                <div class="case-study__metric-value">Entlastet</div>
+                <div class="case-study__metric-label">Weniger Nacharbeit im Büro</div>
               </div>
             </div>
           </div>
@@ -1057,7 +1117,7 @@
                 <span class="case-study__mockup-dot"></span>
                 <span class="case-study__mockup-dot"></span>
                 <span class="case-study__mockup-dot"></span>
-                <span class="case-study__mockup-title">Angebots-Assistent</span>
+                <span class="case-study__mockup-title">Handwerksbetrieb · Angebots-KI</span>
                 <span class="case-study__mockup-status"><span class="case-study__mockup-status-dot"></span>Live</span>
               </div>
               <div class="case-study__mockup-body">
@@ -1077,28 +1137,29 @@
           </div>
         </div>
 
-        <!-- Case Study 2 -->
+        <!-- Case Study 3 -->
         <div class="case-study reveal">
           <div class="case-study__content">
-            <span class="case-study__tag">KI-Telefonassistent</span>
-            <h3 class="case-study__title">Sprich mit der KI – und buch direkt deinen Termin</h3>
+            <div class="case-study__eyebrow"><span>SYSTEM / 03</span><strong>KUNDENLÖSUNG · SERVICE</strong></div>
+            <span class="case-study__tag">KI-Telefonassistent & Terminlogik</span>
+            <h3 class="case-study__title">Anfragen automatisch verstehen und direkt terminieren</h3>
             <p class="case-study__description">
-              Ein KI-Assistent, mit dem man ganz normal sprechen kann und der direkt einen Termin bucht –
-              ganz ohne Formular oder Klicken. Aktuell als eigenständiges Projekt live, demnächst auch
-              als Sprachchat direkt hier auf der Website integriert.
+              Für einen terminintensiven Dienstleistungsbetrieb haben wir einen Sprachassistenten gebaut,
+              der Anrufer natürlich durch ihr Anliegen führt, freie Zeiten prüft und den passenden Termin
+              direkt im Gespräch bestätigt – auch wenn gerade niemand ans Telefon gehen kann.
             </p>
             <div class="case-study__metrics">
               <div class="case-study__metric">
-                <div class="case-study__metric-value">Sprechen</div>
-                <div class="case-study__metric-label">Statt Formular ausfüllen</div>
+                <div class="case-study__metric-value">24/7</div>
+                <div class="case-study__metric-label">Anfragen entgegennehmen</div>
               </div>
               <div class="case-study__metric">
-                <div class="case-study__metric-value">Direktbuchung</div>
-                <div class="case-study__metric-label">Termin in einem Gespräch</div>
+                <div class="case-study__metric-value">Kalender-Sync</div>
+                <div class="case-study__metric-label">Freie Zeiten automatisch prüfen</div>
               </div>
               <div class="case-study__metric">
-                <div class="case-study__metric-value">Live</div>
-                <div class="case-study__metric-label">Bereits jetzt testbar</div>
+                <div class="case-study__metric-value">Direkt</div>
+                <div class="case-study__metric-label">Termin im Gespräch bestätigen</div>
               </div>
             </div>
           </div>
@@ -1108,7 +1169,7 @@
                 <span class="case-study__mockup-dot"></span>
                 <span class="case-study__mockup-dot"></span>
                 <span class="case-study__mockup-dot"></span>
-                <span class="case-study__mockup-title">Telefonassistent</span>
+                <span class="case-study__mockup-title">Kundenservice · Telefon-KI</span>
                 <span class="case-study__mockup-status"><span class="case-study__mockup-status-dot"></span>02:14</span>
               </div>
               <div class="case-study__mockup-body">
@@ -1311,7 +1372,7 @@
     </a>
   </div>
 
-  <script src="js/main.js?v=20260925j" defer></script>
+  <script src="js/main.js?v=20260926a" defer></script>
   <script src="js/cookie-consent.js" defer></script>
 </body>
 </html>
