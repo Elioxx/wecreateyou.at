@@ -3601,6 +3601,38 @@ h1, h2, h3, h4, h5, h6 {
     linear-gradient(145deg, rgba(255,255,255,0.045), rgba(255,255,255,0.018));
 }
 
+.case-study--montara {
+  border-color: rgba(63, 185, 255, 0.2);
+  background:
+    radial-gradient(circle at 82% 24%, rgba(63, 185, 255, 0.08), transparent 30%),
+    linear-gradient(145deg, rgba(255,255,255,0.045), rgba(255,255,255,0.018));
+}
+
+.case-study--vitalora {
+  border-color: rgba(74, 222, 176, 0.2);
+  background:
+    radial-gradient(circle at 82% 24%, rgba(74, 222, 176, 0.08), transparent 30%),
+    linear-gradient(145deg, rgba(255,255,255,0.045), rgba(255,255,255,0.018));
+}
+
+.case-study--montara .case-study__tag,
+.case-study--montara .case-study__metric-value {
+  color: #74cfff;
+}
+
+.case-study--montara .case-study__tag {
+  background: rgba(63, 185, 255, 0.12);
+}
+
+.case-study--vitalora .case-study__tag,
+.case-study--vitalora .case-study__metric-value {
+  color: #63e6ba;
+}
+
+.case-study--vitalora .case-study__tag {
+  background: rgba(74, 222, 176, 0.12);
+}
+
 .case-study:last-child {
   margin-bottom: 0;
 }
@@ -3727,6 +3759,49 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--text-on-dark-muted);
 }
 
+.case-study__client-mark {
+  display: grid;
+  place-items: center;
+  width: 23px;
+  height: 23px;
+  margin-left: var(--space-xs);
+  flex: 0 0 auto;
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 6px;
+  background: linear-gradient(145deg, rgba(101,40,247,0.85), rgba(214,68,180,0.85));
+  color: #fff;
+  font-size: 0.58rem;
+  font-weight: 900;
+}
+
+.case-study__client-mark + .case-study__mockup-title {
+  margin-left: 0.15rem;
+}
+
+.case-study--montara .case-study__client-mark {
+  background: linear-gradient(145deg, #1677aa, #43b9f5);
+}
+
+.case-study--montara .case-study__mockup-status {
+  color: #74cfff;
+}
+
+.case-study--montara .case-study__mockup-status-dot {
+  background: #43b9f5;
+}
+
+.case-study--vitalora .case-study__client-mark {
+  background: linear-gradient(145deg, #15926d, #4adeb0);
+}
+
+.case-study--vitalora .case-study__mockup-status {
+  color: #63e6ba;
+}
+
+.case-study--vitalora .case-study__mockup-status-dot {
+  background: #4adeb0;
+}
+
 .case-study__mockup-status {
   margin-left: auto;
   display: flex;
@@ -3745,7 +3820,7 @@ h1, h2, h3, h4, h5, h6 {
   animation: mockupPulse 1.8s ease-out infinite;
 }
 
-/* PentaNova warehouse UI */
+/* Anonymized industrial warehouse UI */
 .warehouse-ui {
   border-color: rgba(196,215,67,0.22);
   background: #181925;
