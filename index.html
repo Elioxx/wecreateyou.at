@@ -43,7 +43,7 @@
 
   <!-- Performance: Font preloaden (self-hosted, render-kritisch) -->
   <link rel="preload" href="assets/fonts/inter-latin-var.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="css/style.css?v=20260926c">
+  <link rel="stylesheet" href="css/style.css?v=20260928a">
 
   <!-- ===== Structured Data (JSON-LD) ===== -->
   <script type="application/ld+json">
@@ -1256,6 +1256,19 @@
             </p>
           </div>
 
+          <div class="contact-person reveal">
+            <div class="contact-person__photo"><img src="assets/team/jonas-nussmayr-profile.jpg" alt="Jonas Nussmayr" width="640" height="640" loading="lazy"></div>
+            <div class="contact-person__copy">
+              <span>Ihr direkter Ansprechpartner</span>
+              <h3>Jonas Nussmayr</h3>
+              <p>Ihr digitaler Ansprechpartner für Prozessanalyse, Digitalisierung und Automatisierung.</p>
+            </div>
+            <div class="contact-person__actions">
+              <a href="tel:+4368110625059" class="contact-person__phone"><small>Direkt anrufen</small><strong>+43 681 10625059</strong></a>
+              <a href="mailto:office@wecreateyou.at" class="contact-person__mail">E-Mail schreiben →</a>
+            </div>
+          </div>
+
           <form class="contact-form" id="contact-form" action="contact.php" method="POST">
             <div class="contact-form__row">
               <div class="contact-form__group">
@@ -1298,7 +1311,7 @@
               <span class="btn-arrow">→</span>
             </button>
             <p class="contact-form__note" id="contact-form-note">
-              🔒 Deine Daten sind bei uns sicher. DSGVO-konform, keine Weitergabe an Dritte.
+              🔒 Deine Daten sind bei uns sicher. DSGVO-konform, keine Weitergabe an Dritte. <a href="/datensicherheit.html">So schützen wir Daten →</a>
             </p>
           </form>
         </div>
@@ -1346,6 +1359,7 @@
         <div>
           <h4 class="footer__heading">Kontakt</h4>
           <div class="footer__links">
+            <a href="tel:+4368110625059" class="footer__link">+43 681 10625059</a>
             <a href="mailto:office@wecreateyou.at" class="footer__link">office@wecreateyou.at</a>
             <a href="https://wecreateyou.at" class="footer__link" target="_blank">wecreateyou.at</a>
             <a href="#kontakt" class="footer__link">Prozess-Check starten</a>
@@ -1358,6 +1372,7 @@
         <nav class="footer__legal" aria-label="Rechtliches">
           <a href="/impressum.html">Impressum</a>
           <a href="/datenschutz.html">Datenschutz</a>
+          <a href="/datensicherheit.html">Datensicherheit</a>
           <a href="#" onclick="window.wcyCookieSettings && window.wcyCookieSettings(); return false;">Cookie-Einstellungen</a>
         </nav>
         <div class="footer__social">
@@ -1376,7 +1391,7 @@
     </a>
   </div>
 
-  <script src="js/main.js?v=20260926c" defer></script>
+  <script src="js/main.js?v=20260928a" defer></script>
   <script src="js/cookie-consent.js" defer></script>
 </body>
 </html>
