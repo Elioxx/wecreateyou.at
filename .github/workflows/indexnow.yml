@@ -1,0 +1,72 @@
+name: Notify search engines with IndexNow
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "**/*.html"
+      - "sitemap.xml"
+      - "robots.txt"
+      - "96f2be1f76b30726d6751f17bbae6a0a.txt"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: indexnow-production
+  cancel-in-progress: true
+
+jobs:
+  submit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out website
+        uses: actions/checkout@v4
+
+      - name: Wait for the verification key to be live
+        shell: bash
+        run: |
+          key="96f2be1f76b30726d6751f17bbae6a0a"
+          key_url="https://wecreateyou.at/${key}.txt"
+
+          for attempt in {1..24}; do
+            if [[ "$(curl --fail --silent --show-error --max-time 10 "$key_url" || true)" == "$key" ]]; then
+              exit 0
+            fi
+            sleep 10
+          done
+
+          echo "IndexNow verification key is not available on the live website."
+          exit 1
+
+      - name: Submit canonical URLs
+        shell: bash
+        run: |
+          key="96f2be1f76b30726d6751f17bbae6a0a"
+          url_list="$(sed -n 's:.*<loc>\(.*\)</loc>.*:\1:p' sitemap.xml | jq -R . | jq -s .)"
+
+          jq -n \
+            --arg host "wecreateyou.at" \
+            --arg key "$key" \
+            --arg keyLocation "https://wecreateyou.at/${key}.txt" \
+            --argjson urlList "$url_list" \
+            '{host: $host, key: $key, keyLocation: $keyLocation, urlList: $urlList}' \
+            > /tmp/indexnow-payload.json
+
+          status="$(curl --silent --show-error \
+            --output /tmp/indexnow-response.txt \
+            --write-out '%{http_code}' \
+            --request POST \
+            --header 'Content-Type: application/json; charset=utf-8' \
+            --data-binary @/tmp/indexnow-payload.json \
+            https://api.indexnow.org/indexnow)"
+
+          if [[ "$status" != "200" && "$status" != "202" ]]; then
+            cat /tmp/indexnow-response.txt
+            echo "IndexNow returned HTTP $status."
+            exit 1
+          fi
+
+          echo "IndexNow accepted $(jq 'length' <<< "$url_list") canonical URLs (HTTP $status)."
