@@ -3,12 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>KI-Automatisierung & Digitalisierung für KMU | WeCreateYou Österreich</title>
-  <meta name="description" content="WeCreateYou digitalisiert und automatisiert Geschäftsprozesse für KMU in Österreich. Weniger Handarbeit, schnellere Abläufe und mehr Zeit fürs Kerngeschäft.">
-  <meta name="keywords" content="KI Automatisierung, Digitalisierung KMU, Prozessautomatisierung, KI für Unternehmen, Österreich, Gleisdorf, Steiermark, Handwerk, Steuerberater, Arztpraxis, Immobilien">
-  <meta name="author" content="WeCreateYou – Elias Schweighofer">
+  <title>KI-Automatisierung für KMU in Österreich | WeCreateYou</title>
+  <meta name="description" content="WeCreateYou analysiert, digitalisiert und automatisiert Geschäftsprozesse für KMU in Österreich – für weniger Handarbeit, geringere Kosten und mehr Zeit.">
+  <meta name="author" content="WeCreateYou">
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
   <link rel="canonical" href="https://wecreateyou.at/">
+  <link rel="alternate" hreflang="de-AT" href="https://wecreateyou.at/">
+  <link rel="alternate" hreflang="x-default" href="https://wecreateyou.at/">
 
   <!-- Geo / Local SEO -->
   <meta name="geo.region" content="AT-6">
@@ -18,8 +19,8 @@
 
   <!-- Open Graph -->
   <meta property="og:site_name" content="WeCreateYou">
-  <meta property="og:title" content="KI-Automatisierung & Digitalisierung für KMU | WeCreateYou">
-  <meta property="og:description" content="Weniger Handarbeit, schnellere Abläufe und mehr Zeit fürs Kerngeschäft: Digitalisierung und KI-Automatisierung für KMU in Österreich.">
+  <meta property="og:title" content="KI-Automatisierung für KMU in Österreich | WeCreateYou">
+  <meta property="og:description" content="Geschäftsprozesse analysieren, digitalisieren und automatisieren – für weniger Handarbeit, geringere Kosten und mehr Zeit.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://wecreateyou.at/">
   <meta property="og:locale" content="de_AT">
@@ -30,14 +31,15 @@
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="KI-Automatisierung & Digitalisierung für KMU | WeCreateYou">
-  <meta name="twitter:description" content="Weniger Handarbeit und mehr Zeit fürs Kerngeschäft: Digitalisierung und KI-Automatisierung für KMU in Österreich.">
+  <meta name="twitter:title" content="KI-Automatisierung für KMU in Österreich | WeCreateYou">
+  <meta name="twitter:description" content="Geschäftsprozesse analysieren, digitalisieren und automatisieren – für weniger Handarbeit, geringere Kosten und mehr Zeit.">
   <meta name="twitter:image" content="https://wecreateyou.at/assets/og/og-image.png">
+  <meta name="twitter:image:alt" content="WeCreateYou – Prozesse automatisieren mit Künstlicher Intelligenz">
 
   <!-- Icons & Theme -->
-  <link rel="icon" href="/favicon.ico?v=20260925" sizes="any">
-  <link rel="icon" type="image/png" sizes="32x32" href="/assets/brand/logo-tech-32.png?v=20260925">
-  <link rel="apple-touch-icon" sizes="180x180" href="/assets/brand/logo-tech-180.png?v=20260925">
+  <link rel="icon" type="image/png" sizes="48x48" href="/assets/brand/logo-tech-48.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/assets/brand/logo-tech-192.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/brand/logo-tech-180.png">
   <link rel="manifest" href="/site.webmanifest">
   <meta name="theme-color" content="#6528F7">
 
@@ -54,14 +56,52 @@
         "@type": "ProfessionalService",
         "@id": "https://wecreateyou.at/#organization",
         "name": "WeCreateYou",
-        "alternateName": "WeCreateYou – KI-Automatisierung",
+        "alternateName": ["wecreateyou", "wecreateyou.at"],
         "url": "https://wecreateyou.at/",
-        "logo": "https://wecreateyou.at/assets/brand/logo-tech-512.png",
-        "image": "https://wecreateyou.at/assets/og/og-image.png",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://wecreateyou.at/assets/brand/logo-tech-512.png",
+          "width": 512,
+          "height": 512
+        },
+        "image": {
+          "@type": "ImageObject",
+          "url": "https://wecreateyou.at/assets/og/og-image.png",
+          "width": 1200,
+          "height": 630
+        },
         "description": "KI-gestützte Prozessautomatisierung und Digitalisierung für kleine und mittlere Unternehmen in Österreich.",
+        "slogan": "Deine Vision. Unsere Realisation.",
         "email": "office@wecreateyou.at",
+        "telephone": "+43 681 10625049",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "name": "Jonas Nussmayr",
+          "contactType": "Kundenberatung",
+          "telephone": "+43 681 10625049",
+          "email": "office@wecreateyou.at",
+          "availableLanguage": "de"
+        },
         "founder": { "@type": "Person", "name": "Elias Schweighofer" },
-        "areaServed": { "@type": "Country", "name": "Österreich" },
+        "employee": [
+          {
+            "@type": "Person",
+            "name": "Elias Schweighofer",
+            "jobTitle": "AI Engineering & Automation",
+            "image": "https://wecreateyou.at/assets/team/elias-schweighofer-profile.jpg"
+          },
+          {
+            "@type": "Person",
+            "name": "Jonas Nussmayr",
+            "jobTitle": "Process Design & Business Case",
+            "image": "https://wecreateyou.at/assets/team/jonas-nussmayr-profile.jpg"
+          }
+        ],
+        "areaServed": [
+          { "@type": "City", "name": "Graz" },
+          { "@type": "State", "name": "Steiermark" },
+          { "@type": "Country", "name": "Österreich" }
+        ],
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "Kalch 13",
@@ -72,24 +112,37 @@
         },
         "geo": { "@type": "GeoCoordinates", "latitude": 47.1050, "longitude": 15.7080 },
         "priceRange": "€€",
-        "aggregateRating": {
-          "@type": "AggregateRating",
-          "ratingValue": "5.0",
-          "reviewCount": "6",
-          "bestRating": "5",
-          "worstRating": "1"
-        }
+        "knowsAbout": [
+          "Prozessanalyse",
+          "Geschäftsprozessautomatisierung",
+          "Digitalisierung von KMU",
+          "KI-Automatisierung",
+          "Systemintegration",
+          "DSGVO-konforme digitale Prozesse"
+        ]
       },
       {
         "@type": "WebSite",
         "@id": "https://wecreateyou.at/#website",
         "url": "https://wecreateyou.at/",
         "name": "WeCreateYou",
+        "alternateName": ["wecreateyou", "wecreateyou.at"],
         "publisher": { "@id": "https://wecreateyou.at/#organization" },
         "inLanguage": "de-AT"
       },
       {
+        "@type": "WebPage",
+        "@id": "https://wecreateyou.at/#webpage",
+        "url": "https://wecreateyou.at/",
+        "name": "KI-Automatisierung für KMU in Österreich | WeCreateYou",
+        "description": "WeCreateYou analysiert, digitalisiert und automatisiert Geschäftsprozesse für KMU in Österreich.",
+        "isPartOf": { "@id": "https://wecreateyou.at/#website" },
+        "about": { "@id": "https://wecreateyou.at/#organization" },
+        "inLanguage": "de-AT"
+      },
+      {
         "@type": "Service",
+        "@id": "https://wecreateyou.at/#service",
         "name": "KI-Prozessautomatisierung für KMU",
         "serviceType": "Digitalisierung & KI-Automatisierung",
         "provider": { "@id": "https://wecreateyou.at/#organization" },
@@ -105,16 +158,6 @@
             { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Sonstige digitale Dienstleistungen", "url": "https://wecreateyou.at/branchen/sonstige-digitale-dienstleistungen.html" } }
           ]
         }
-      },
-      {
-        "@type": "FAQPage",
-        "@id": "https://wecreateyou.at/#faq",
-        "mainEntity": [
-          { "@type": "Question", "name": "Was macht WeCreateYou genau?", "acceptedAnswer": { "@type": "Answer", "text": "WeCreateYou digitalisiert und automatisiert Geschäftsprozesse von kleinen und mittleren Unternehmen mit Künstlicher Intelligenz – von der Kundenkommunikation über Terminplanung bis zur Administration." } },
-          { "@type": "Question", "name": "Für welche Branchen ist die KI-Automatisierung geeignet?", "acceptedAnswer": { "@type": "Answer", "text": "Wir bieten maßgeschneiderte Lösungen unter anderem für Handwerksbetriebe, Steuerberater und Kanzleien, Arztpraxen sowie Immobilienverwaltungen – die Ansätze lassen sich auf nahezu jede Branche übertragen." } },
-          { "@type": "Question", "name": "Was kostet die Automatisierung meiner Prozesse?", "acceptedAnswer": { "@type": "Answer", "text": "Jede Lösung wird individuell auf dein Unternehmen zugeschnitten. Im kostenlosen Prozess-Check analysieren wir dein Einsparpotenzial und erstellen ein transparentes Angebot." } },
-          { "@type": "Question", "name": "Wie schnell sehe ich Ergebnisse?", "acceptedAnswer": { "@type": "Answer", "text": "Erste Automatisierungen sind oft innerhalb weniger Wochen produktiv. Den konkreten Zeitrahmen und Return on Investment berechnen wir gemeinsam im ROI-Rechner und in der Erstberatung." } }
-        ]
       }
     ]
   }
