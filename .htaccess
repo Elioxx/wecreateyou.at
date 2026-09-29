@@ -1,0 +1,8 @@
+RewriteEngine On
+
+# Preserve signals from historical URLs that still appear in Google Search Console.
+RewriteRule ^home/?$ / [R=301,L]
+RewriteRule ^uberuns/?$ /#team [R=301,L,NE]
+RewriteRule ^impressum/?$ /impressum.html [R=301,L]
+RewriteRule ^landing/?$ / [R=301,L]
+RewriteRule ^portfolio-5/?$ /#referenzen [R=301,L,NE]
