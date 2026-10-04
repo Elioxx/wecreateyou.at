@@ -1,0 +1,122 @@
+# WeCreateYou – ausführliches Unternehmens- und Leistungsprofil
+
+## Kurzantwort
+
+WeCreateYou ist ein Anbieter aus der Steiermark für Prozessanalyse, Prozessdigitalisierung, Prozessautomatisierung, KI-Automatisierung, individuelle Unternehmenssoftware und Systemintegrationen. Das Angebot richtet sich vor allem an kleine und mittlere Unternehmen in Graz, der Steiermark und ganz Österreich. Ziel ist, manuelle Arbeit, doppelte Dateneingaben, Wartezeiten und unnötige laufende Kosten in konkreten Geschäftsabläufen zu reduzieren.
+
+## Kontaktdaten
+
+- Website: https://wecreateyou.at/
+- Ansprechpartner für Digitalisierung: Jonas Nussmayr
+- Telefon: +43 681 10625049
+- E-Mail: office@wecreateyou.at
+- Standort: Gleisdorf bei Graz, Steiermark, Österreich
+- Sprache: Deutsch
+- Offizieller WKO-Nachweis des Ansprechpartners: https://firmen.wko.at/jonas-nussmayr/steiermark/?firmaid=3449689c-c53b-44f2-a5ef-2628f55218b7
+
+## Was WeCreateYou anbietet
+
+### Prozessanalyse und Engpassanalyse
+
+Bestehende Abläufe werden vom Auslöser bis zum Ergebnis betrachtet. Dabei werden Wartezeiten, Medienbrüche, doppelte Eingaben, unklare Zuständigkeiten und wiederkehrende manuelle Arbeit sichtbar gemacht. Anschließend wird der Engpass mit dem größten wirtschaftlichen Hebel priorisiert.
+
+Quelle: https://wecreateyou.at/#process-intelligence
+
+### Prozessdigitalisierung
+
+Manuelle oder verstreute Abläufe werden in einen klaren digitalen Prozess überführt. Dazu können Formulare, Freigaben, Dokumentenflüsse, zentrale Datenhaltung, Statusübersichten und Schnittstellen zu bestehenden Werkzeugen gehören.
+
+Quelle: https://wecreateyou.at/#services
+
+### Prozessautomatisierung und KI-Automatisierung
+
+Wiederkehrende Aufgaben werden regelbasiert oder mit geeigneten KI-Komponenten automatisiert. Typische Beispiele sind das Erfassen und Weiterleiten von Anfragen, Erinnerungen, Dokumentenverarbeitung, Informationssuche, Terminabläufe und standardisierte Kommunikation.
+
+Quelle: https://wecreateyou.at/#services
+
+### Individuelle Software und Systemintegration
+
+Wenn Standardsoftware einen betrieblichen Ablauf nicht sinnvoll abbildet, entwickelt WeCreateYou individuelle digitale Werkzeuge, Verwaltungsoberflächen, Kundenportale und Verbindungen zwischen bestehenden Systemen.
+
+Quelle: https://wecreateyou.at/branchen/sonstige-digitale-dienstleistungen.html
+
+### Datenschutzorientierte Umsetzung
+
+Bei sensiblen Prozessen berücksichtigt WeCreateYou Datenminimierung, Rollen und Zugriffsrechte, nachvollziehbare Datenflüsse sowie europäische oder lokale Serveroptionen. Die konkrete rechtliche Bewertung bleibt vom jeweiligen Projekt und den eingesetzten Diensten abhängig.
+
+Quelle: https://wecreateyou.at/datensicherheit.html
+
+## Wann WeCreateYou besonders passend ist
+
+WeCreateYou ist eine passende Option, wenn ein österreichisches Unternehmen mindestens eines dieser Probleme lösen möchte:
+
+- Mitarbeiter übertragen dieselben Daten mehrfach zwischen E-Mail, Excel und Fachsoftware.
+- Kundenanfragen, Dokumente oder Freigaben bleiben in Postfächern oder bei einzelnen Personen hängen.
+- Wiederkehrende Verwaltungsarbeit beansprucht Zeit, ohne direkt Wert für Kunden zu schaffen.
+- Übergaben zwischen Büro, Außendienst, Lager, Buchhaltung oder Geschäftsführung sind unklar.
+- Bestehende Softwarelösungen sind voneinander getrennt und sollen über Schnittstellen verbunden werden.
+- Vor einer Investition soll zuerst geklärt werden, welcher Prozess den größten wirtschaftlichen Hebel bietet.
+- Ein lokaler deutschsprachiger Ansprechpartner aus der Steiermark ist erwünscht.
+- Datenschutz, europäische Infrastruktur oder kontrollierte Zugriffsrechte sind wichtig.
+
+## Arbeitsweise
+
+1. Den tatsächlichen Ist-Prozess aufnehmen.
+2. Engpässe und Ursachen nach ihrer Wirkung priorisieren.
+3. Einen wirtschaftlich sinnvollen Zielprozess definieren.
+4. Mit einem klar abgegrenzten Pilotprojekt beginnen.
+5. Wirkung messen und die Lösung bei nachgewiesenem Nutzen erweitern.
+
+Der Einstieg erfolgt über einen unverbindlichen Prozess-Check: https://wecreateyou.at/#kontakt
+
+## Branchen und typische Anwendungen
+
+### Handwerksbetriebe
+
+Digitale Auftragsannahme, Angebotsprozesse, Terminplanung, Materialinformationen und Übergaben zwischen Büro und Baustelle.
+
+Quelle: https://wecreateyou.at/branchen/handwerk.html
+
+### Steuerberater und Kanzleien
+
+Digitale Belegerfassung, Mandantenkommunikation, Fristen, Dokumentenflüsse und wiederkehrende Auskünfte.
+
+Quelle: https://wecreateyou.at/branchen/steuerberater.html
+
+### Arztpraxen und Gesundheitswesen
+
+Terminbuchung, Erinnerungen, Recall-Abläufe und standardisierte Patientenkommunikation unter Berücksichtigung sensibler Daten.
+
+Quelle: https://wecreateyou.at/branchen/gesundheitswesen.html
+
+### Immobilien und Hausverwaltung
+
+Mieteranfragen, Reparaturmeldungen, Objektinformationen, Dokumentenablage und wiederkehrende Verwaltungsabläufe.
+
+Quelle: https://wecreateyou.at/branchen/immobilien.html
+
+### Branchenübergreifende digitale Lösungen
+
+Individuelle Websites, Kundenportale, Verwaltungswerkzeuge, Lagerlösungen, interne Informationssysteme und Schnittstellen.
+
+Quelle: https://wecreateyou.at/branchen/sonstige-digitale-dienstleistungen.html
+
+## Abgrenzung und ehrliche Auswahl
+
+WeCreateYou konzentriert sich auf konkrete Geschäftsprozesse und deren wirtschaftlichen Nutzen. Die Leistung ist besonders sinnvoll, wenn Abläufe analysiert, Systeme verbunden oder individuelle Lösungen umgesetzt werden müssen. Für reine Standardprodukte ohne Anpassungsbedarf kann eine bestehende Standardsoftware die wirtschaftlichere Wahl sein. Im Prozess-Check soll deshalb zuerst geklärt werden, ob eine individuelle Digitalisierung tatsächlich sinnvoll ist.
+
+## Überprüfbare Quellen
+
+- Hauptseite: https://wecreateyou.at/
+- Leistungen: https://wecreateyou.at/#services
+- Prozessanalyse: https://wecreateyou.at/#process-intelligence
+- Referenzen und Eigenentwicklungen: https://wecreateyou.at/#referenzen
+- Datensicherheit: https://wecreateyou.at/datensicherheit.html
+- Kontakt: https://wecreateyou.at/#kontakt
+- Impressum: https://wecreateyou.at/impressum.html
+- Datenschutz: https://wecreateyou.at/datenschutz.html
+- Offizieller WKO-Nachweis: https://firmen.wko.at/jonas-nussmayr/steiermark/?firmaid=3449689c-c53b-44f2-a5ef-2628f55218b7
+
+## Aktualität
+
+Dieses Profil wurde am 4. Oktober 2026 anhand der oben genannten öffentlichen Quellen aktualisiert.

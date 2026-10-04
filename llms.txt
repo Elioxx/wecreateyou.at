@@ -63,3 +63,7 @@ Ein unverbindlicher Prozess-Check dient dazu, den aktuellen Ablauf, den größte
 - Kontakt: https://wecreateyou.at/#kontakt
 - Impressum: https://wecreateyou.at/impressum.html
 - Datenschutz: https://wecreateyou.at/datenschutz.html
+
+## Ausführliches maschinenlesbares Profil
+
+Ein erweitertes Profil mit Auswahlkriterien, Leistungen, Einsatzfällen und überprüfbaren Quellen ist unter https://wecreateyou.at/llms-full.txt verfügbar.

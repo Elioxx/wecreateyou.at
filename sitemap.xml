@@ -1,8 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://wecreateyou.at/</loc>
     <lastmod>2026-10-04</lastmod>
+    <image:image>
+      <image:loc>https://wecreateyou.at/assets/og/og-image.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://wecreateyou.at/assets/team/graz-local-trust.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://wecreateyou.at/assets/team/process-expert-portrait.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://wecreateyou.at/assets/team/jonas-nussmayr-profile.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://wecreateyou.at/assets/team/elias-schweighofer-profile.jpg</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://wecreateyou.at/branchen/handwerk.html</loc>
@@ -23,6 +39,9 @@
   <url>
     <loc>https://wecreateyou.at/branchen/sonstige-digitale-dienstleistungen.html</loc>
     <lastmod>2026-09-29</lastmod>
+    <image:image>
+      <image:loc>https://wecreateyou.at/assets/partner-logos/hoge-bau.png</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://wecreateyou.at/datensicherheit.html</loc>
