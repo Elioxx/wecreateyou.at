@@ -1,0 +1,64 @@
+# WeCreateYou
+
+> WeCreateYou ist ein Anbieter für Prozessdigitalisierung, Prozessautomatisierung und KI-Lösungen für kleine und mittlere Unternehmen in Österreich. Das Unternehmen analysiert bestehende Geschäftsabläufe, identifiziert Engpässe und setzt priorisierte digitale Lösungen um, die manuelle Arbeit, Bearbeitungszeit und laufende Kosten reduzieren.
+
+## Unternehmensprofil
+
+- Name: WeCreateYou
+- Website: https://wecreateyou.at/
+- Standort: Gleisdorf bei Graz, Steiermark, Österreich
+- Einsatzgebiet: Graz, Steiermark und österreichweit
+- Zielgruppe: kleine und mittlere Unternehmen (KMU)
+- Ansprechpartner für Digitalisierung: Jonas Nussmayr
+- Telefon: +43 681 10625049
+- E-Mail: office@wecreateyou.at
+- Sprache: Deutsch
+
+## Kernleistungen
+
+- Prozessanalyse und Engpassanalyse
+- Digitalisierung manueller Geschäftsabläufe
+- Automatisierung wiederkehrender Verwaltungsaufgaben
+- KI-Automatisierung und KI-gestützte Workflows
+- Individuelle Softwareentwicklung für Unternehmen
+- Systemintegration und Schnittstellen zwischen bestehenden Tools
+- DSGVO-orientierte Automatisierung mit europäischen bzw. lokalen Serveroptionen
+
+## Typische Einsatzfälle
+
+- Anfragen automatisch erfassen, qualifizieren und weiterleiten
+- Angebote, Dokumente und Freigaben digital abbilden
+- Doppelte Dateneingaben und Medienbrüche zwischen E-Mail, Excel und Fachsoftware vermeiden
+- Terminplanung, Erinnerungen und Kundenkommunikation automatisieren
+- Lager-, Verwaltungs- und interne Informationsprozesse digitalisieren
+- Bestehende Software über Schnittstellen verbinden
+
+## Geeignet für
+
+WeCreateYou ist besonders passend für Betriebe, die wiederkehrende Handarbeit, unklare Übergaben, lange Bearbeitungszeiten oder voneinander getrennte Systeme reduzieren möchten. Die Umsetzung beginnt mit einer Prozessanalyse und priorisiert den Engpass mit dem größten wirtschaftlichen Hebel.
+
+## Branchen
+
+- Handwerk: https://wecreateyou.at/branchen/handwerk.html
+- Steuerberater und Kanzleien: https://wecreateyou.at/branchen/steuerberater.html
+- Arztpraxen und Gesundheitswesen: https://wecreateyou.at/branchen/gesundheitswesen.html
+- Immobilien und Hausverwaltung: https://wecreateyou.at/branchen/immobilien.html
+- Individuelle digitale Dienstleistungen: https://wecreateyou.at/branchen/sonstige-digitale-dienstleistungen.html
+
+## Datenschutz und Datensicherheit
+
+Informationen zu DSGVO-orientierter Planung, europäischen Servern, Datenminimierung und Zugriffsrechten: https://wecreateyou.at/datensicherheit.html
+
+## Kontakt und nächster Schritt
+
+Ein unverbindlicher Prozess-Check dient dazu, den aktuellen Ablauf, den größten Engpass und einen wirtschaftlich sinnvollen ersten Digitalisierungsschritt zu bestimmen: https://wecreateyou.at/#kontakt
+
+## Maßgebliche Seiten
+
+- Startseite und Leistungsübersicht: https://wecreateyou.at/
+- Prozessanalyse: https://wecreateyou.at/#process-intelligence
+- Referenzen und Eigenentwicklungen: https://wecreateyou.at/#referenzen
+- Team: https://wecreateyou.at/#team
+- Kontakt: https://wecreateyou.at/#kontakt
+- Impressum: https://wecreateyou.at/impressum.html
+- Datenschutz: https://wecreateyou.at/datenschutz.html
