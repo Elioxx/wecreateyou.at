@@ -12,6 +12,9 @@ header('Content-Type: application/json; charset=utf-8');
 
 const RECIPIENT = 'office@wecreateyou.at';
 const MAX_LEN = 5000;
+const MAX_REQUEST_BYTES = 20000;
+const RATE_LIMIT_MAX = 5;
+const RATE_LIMIT_WINDOW = 900;
 
 function fail(int $code, string $message): never {
     http_response_code($code);
@@ -23,11 +26,47 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     fail(405, 'Method not allowed');
 }
 
+if ((int)($_SERVER['CONTENT_LENGTH'] ?? 0) > MAX_REQUEST_BYTES) {
+    fail(413, 'Die Anfrage ist zu groß.');
+}
+
 // Honeypot: Bots füllen versteckte Felder meist aus
 if (!empty($_POST['website'] ?? '')) {
     // Stiller Erfolg vortäuschen, ohne tatsächlich etwas zu tun
     echo json_encode(['ok' => true]);
     exit;
+}
+
+// Pro IP sind maximal fünf Versuche in 15 Minuten möglich. Gespeichert wird
+// ausschließlich ein kurzlebiger Hash im temporären Serververzeichnis.
+$clientIp = (string)($_SERVER['REMOTE_ADDR'] ?? 'unknown');
+$rateFile = sys_get_temp_dir() . '/wcy-contact-' . hash('sha256', $clientIp) . '.json';
+$rateHandle = @fopen($rateFile, 'c+');
+
+if ($rateHandle !== false && flock($rateHandle, LOCK_EX)) {
+    $raw = stream_get_contents($rateHandle);
+    $attempts = json_decode($raw !== false ? $raw : '[]', true);
+    $attempts = is_array($attempts) ? $attempts : [];
+    $now = time();
+    $attempts = array_values(array_filter(
+        $attempts,
+        static fn($timestamp): bool => is_int($timestamp) && $timestamp > $now - RATE_LIMIT_WINDOW
+    ));
+
+    if (count($attempts) >= RATE_LIMIT_MAX) {
+        flock($rateHandle, LOCK_UN);
+        fclose($rateHandle);
+        header('Retry-After: ' . RATE_LIMIT_WINDOW);
+        fail(429, 'Zu viele Anfragen. Bitte versuche es in einigen Minuten erneut.');
+    }
+
+    $attempts[] = $now;
+    rewind($rateHandle);
+    ftruncate($rateHandle, 0);
+    fwrite($rateHandle, json_encode($attempts));
+    fflush($rateHandle);
+    flock($rateHandle, LOCK_UN);
+    fclose($rateHandle);
 }
 
 function clean(string $value): string {
@@ -36,10 +75,10 @@ function clean(string $value): string {
     return mb_substr($value, 0, MAX_LEN);
 }
 
-$name    = clean((string)($_POST['name'] ?? ''));
+$name    = mb_substr(clean((string)($_POST['name'] ?? '')), 0, 200);
 $email   = trim((string)($_POST['email'] ?? ''));
-$company = clean((string)($_POST['company'] ?? ''));
-$branch  = clean((string)($_POST['branch'] ?? ''));
+$company = mb_substr(clean((string)($_POST['company'] ?? '')), 0, 200);
+$branch  = mb_substr(clean((string)($_POST['branch'] ?? '')), 0, 100);
 $message = mb_substr(trim((string)($_POST['message'] ?? '')), 0, MAX_LEN);
 
 if ($name === '' || $email === '') {

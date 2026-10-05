@@ -7,3 +7,14 @@ RewriteRule ^impressum/?$ /impressum.html [R=301,L]
 RewriteRule ^landing/?$ / [R=301,L]
 RewriteRule ^portfolio-5/?$ /#referenzen [R=301,L,NE]
 RewriteRule ^referenzprojekte/?$ /#referenzen [R=301,L,NE]
+
+# Baseline security headers. The CSP stays conservative because the current
+# pages still contain a small number of intentional inline styles.
+<IfModule mod_headers.c>
+  Header always set Strict-Transport-Security "max-age=31536000"
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set X-Frame-Options "SAMEORIGIN"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  Header always set Permissions-Policy "camera=(), microphone=(), geolocation=(), payment=(), usb=()"
+  Header always set Content-Security-Policy "upgrade-insecure-requests; frame-ancestors 'self'; base-uri 'self'; form-action 'self'"
+</IfModule>

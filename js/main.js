@@ -320,7 +320,7 @@ function initFloatingCTA() {
 
   const heroSection = document.querySelector('.hero');
   const contactSection = document.getElementById('kontakt');
-  const conversionTargets = document.querySelectorAll('#hero-cta-primary, .digital-feature__cta, .process__cta, .contact-form__submit');
+  const conversionTargets = document.querySelectorAll('#hero-cta-primary, .digital-feature__cta, .process__cta, .selected-reference > a, .case-study__cta, .contact-form__submit');
 
   window.addEventListener('scroll', () => {
     const heroBottom = heroSection ? heroSection.getBoundingClientRect().bottom : 0;
