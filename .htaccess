@@ -11,6 +11,9 @@ RewriteRule ^referenzprojekte/?$ /#referenzen [R=301,L,NE]
 # Baseline security headers. The CSP stays conservative because the current
 # pages still contain a small number of intentional inline styles.
 <IfModule mod_headers.c>
+  <FilesMatch "\.(html?)$">
+    Header always set Cache-Control "no-cache, must-revalidate"
+  </FilesMatch>
   Header always set Strict-Transport-Security "max-age=31536000"
   Header always set X-Content-Type-Options "nosniff"
   Header always set X-Frame-Options "SAMEORIGIN"
