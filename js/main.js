@@ -276,7 +276,7 @@ function initTypewriter() {
   const el = document.getElementById('typewriter-target');
   if (!el) return;
 
-  const words = ['Intelligent automatisiert.', 'Intelligent optimiert.', 'Spürbar beschleunigt.', 'Digital neu gedacht.'];
+  const words = ['Mehr Zeit fürs Geschäft.', '10+ Stunden zurück.', 'Mehr Fokus aufs Kerngeschäft.', 'Digital besser arbeiten.'];
   let wordIndex = 0;
   let charIndex = words[0].length;
   let isDeleting = true;

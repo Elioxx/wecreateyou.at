@@ -5,8 +5,8 @@ RewriteRule ^home/?$ / [R=301,L]
 RewriteRule ^uberuns/?$ /#team [R=301,L,NE]
 RewriteRule ^impressum/?$ /impressum.html [R=301,L]
 RewriteRule ^landing/?$ / [R=301,L]
-RewriteRule ^portfolio-5/?$ /#referenzen [R=301,L,NE]
-RewriteRule ^referenzprojekte/?$ /#referenzen [R=301,L,NE]
+RewriteRule ^portfolio-5/?$ /referenzen.html [R=301,L]
+RewriteRule ^referenzprojekte/?$ /referenzen.html [R=301,L]
 
 # Baseline security headers. The CSP stays conservative because the current
 # pages still contain a small number of intentional inline styles.

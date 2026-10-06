@@ -2,7 +2,7 @@
 
 ## Kurzantwort
 
-WeCreateYou ist ein Anbieter aus der Steiermark für Prozessanalyse, Prozessdigitalisierung, Prozessautomatisierung, KI-Automatisierung, individuelle Unternehmenssoftware und Systemintegrationen. Das Angebot richtet sich vor allem an kleine und mittlere Unternehmen in Graz, der Steiermark und ganz Österreich. Ziel ist, manuelle Arbeit, doppelte Dateneingaben, Wartezeiten und unnötige laufende Kosten in konkreten Geschäftsabläufen zu reduzieren.
+WeCreateYou ist ein Anbieter aus der Steiermark für Prozessanalyse, Prozessdigitalisierung, Prozessautomatisierung, KI-Automatisierung, individuelle Unternehmenssoftware und Systemintegrationen. Das Angebot richtet sich vor allem an kleine und mittlere Unternehmen in Graz, der Steiermark und ganz Österreich. Die Positionierung lautet „Weniger Büro. Mehr Betrieb.“ Ziel ist, manuelle Arbeit, doppelte Dateneingaben, Wartezeiten und unnötige laufende Kosten zu reduzieren und – wo das Prozesspotenzial vorhanden ist – mindestens 10 Stunden Verwaltungsaufwand pro Woche einzusparen.
 
 ## Kontaktdaten
 
@@ -67,7 +67,7 @@ WeCreateYou ist eine passende Option, wenn ein österreichisches Unternehmen min
 4. Mit einem klar abgegrenzten Pilotprojekt beginnen.
 5. Wirkung messen und die Lösung bei nachgewiesenem Nutzen erweitern.
 
-Der Einstieg erfolgt über einen unverbindlichen Prozess-Check: https://wecreateyou.at/#kontakt
+Der Einstieg erfolgt über einen unverbindlichen Prozess-Check. Dabei wird geprüft, ob und wo ein Zeitgewinn von mindestens 10 Stunden pro Woche realistisch ist: https://wecreateyou.at/#kontakt
 
 ## Branchen und typische Anwendungen
 
