@@ -29,7 +29,7 @@
   <link rel="manifest" href="/site.webmanifest">
   <meta name="theme-color" content="#6528F7">
   <link rel="preload" href="assets/fonts/inter-latin-var.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="css/style.css?v=20261005b">
+  <link rel="stylesheet" href="css/style.css?v=20261006a">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -91,6 +91,7 @@
   <main>
     <section class="reference-archive-hero">
       <div class="reference-archive-hero__grid" aria-hidden="true"></div>
+      <div class="reference-archive-hero__halo" aria-hidden="true"><span></span><span></span><span></span></div>
       <div class="container reference-archive-hero__inner reveal">
         <span class="section-label">Selected Work · Websites · Funnels · Systeme</span>
         <h1>Referenzen, die zeigen,<br><span class="text-gradient">was wir wirklich bauen.</span></h1>
@@ -100,25 +101,27 @@
           <div><strong>3</strong><span>Lösungstypen</span></div>
           <div><strong>1</strong><span>Anspruch: echte Wirkung</span></div>
         </div>
+        <a class="reference-archive-hero__scroll" href="#reference-archive-title"><span>↓</span> Projekte entdecken</a>
       </div>
     </section>
 
     <section class="section reference-archive" aria-labelledby="reference-archive-title">
       <div class="container">
         <div class="reference-archive__intro reveal">
-          <span class="section-label">Projektübersicht</span>
+          <div><span class="section-label">Projektübersicht</span><span class="reference-archive__counter">01 — 06</span></div>
           <h2 class="section-title" id="reference-archive-title">Unterschiedliche Branchen.<br><span class="text-gradient">Individuelle Lösungen.</span></h2>
+          <p>Keine Templates von der Stange. Jede Referenz bekommt ihre eigene visuelle Sprache, ihren eigenen Prozess und eine Lösung, die zum Geschäftsmodell passt.</p>
         </div>
 
         <div class="reference-archive__grid">
-          <article class="reference-project reference-project--featured reveal" id="pentanova-usa">
+          <article class="reference-project reference-project--featured reveal" id="pentanova-usa" data-index="01">
             <div class="reference-project__visual reference-project__visual--pentanova">
               <div class="reference-project__signal">SYSTEM / 01</div>
               <div class="reference-project__monogram">PN</div>
               <strong>PENTANOVA USA</strong>
               <span>ATLANTA STORAGE · SYSTEM ONLINE</span>
             </div>
-            <div class="reference-project__content">
+            <div class="reference-project__content" data-index="01">
               <div class="reference-project__meta"><span>Digitale Plattform</span><span>USA</span></div>
               <h2>PentaNova USA</h2>
               <p>Ein geschütztes Lager- und Verwaltungssystem, das Bestände, Produktdaten, Kategorien und Hersteller an einem zentralen Ort zusammenführt. Das Team arbeitet mit einer klaren, durchsuchbaren Oberfläche statt mit verteilten Listen.</p>
@@ -127,14 +130,14 @@
             </div>
           </article>
 
-          <article class="reference-project reveal" id="aurumcine">
+          <article class="reference-project reveal" id="aurumcine" data-index="02">
             <div class="reference-project__visual reference-project__visual--aurum">
               <div class="reference-project__signal">WEBSITE / 01</div>
               <strong>AURUMCINE</strong>
               <i></i>
               <p>What remains<br>is the experience.</p>
             </div>
-            <div class="reference-project__content">
+            <div class="reference-project__content" data-index="02">
               <div class="reference-project__meta"><span>Immersive Website</span><span>International</span></div>
               <h2>AURUMCINE</h2>
               <p>Eine digitale Markenwelt für private High-End-Kinos. Großflächige Typografie, filmische Übergänge, gezielte Bewegung und eine reduzierte Nutzerführung übersetzen den Premiumanspruch in ein atmosphärisches Web-Erlebnis.</p>
@@ -143,14 +146,14 @@
             </div>
           </article>
 
-          <article class="reference-project reveal reveal--delay-1" id="city-hair-salon">
+          <article class="reference-project reveal reveal--delay-1" id="city-hair-salon" data-index="03">
             <div class="reference-project__visual reference-project__visual--cityhair">
               <div class="reference-project__signal">WEBSITE / 02</div>
               <div class="reference-project__city-mark">CH</div>
               <strong>CITY HAIR SALON</strong>
               <span>GLEISDORF · STYLE &amp; CARE</span>
             </div>
-            <div class="reference-project__content">
+            <div class="reference-project__content" data-index="03">
               <div class="reference-project__meta"><span>Website</span><span>Gleisdorf</span></div>
               <h2>City Hair Salon</h2>
               <p>Ein hochwertiger Webauftritt, der Persönlichkeit, Leistungen und Ergebnisse des Salons sichtbar macht. Klare Leistungsbereiche, echte Arbeiten und die direkte WhatsApp-Terminbuchung führen Interessierte ohne Umwege zum Kontakt.</p>
@@ -159,12 +162,12 @@
             </div>
           </article>
 
-          <article class="reference-project reveal" id="hoge-bau">
+          <article class="reference-project reveal" id="hoge-bau" data-index="04">
             <div class="reference-project__visual reference-project__visual--logo">
               <div class="reference-project__signal">WEBSITE / 03</div>
               <img src="assets/partner-logos/hoge-bau.png" alt="HOGE Bau-GmbH Logo" width="1151" height="862" loading="lazy" decoding="async">
             </div>
-            <div class="reference-project__content">
+            <div class="reference-project__content" data-index="04">
               <div class="reference-project__meta"><span>Website</span><span>Bauunternehmen</span></div>
               <h2>HOGE Bau</h2>
               <p>Ein klarer, bodenständiger Webauftritt für Beratung, Planung, Neubau und Sanierung. Leistungen, Referenzprojekte und regionale Kompetenz werden verständlich vermittelt und führen Interessierte gezielt zur Projektanfrage.</p>
@@ -173,12 +176,12 @@
             </div>
           </article>
 
-          <article class="reference-project reveal reveal--delay-1" id="ruecken-gesund">
+          <article class="reference-project reveal reveal--delay-1" id="ruecken-gesund" data-index="05">
             <div class="reference-project__visual reference-project__visual--logo reference-project__visual--health">
               <div class="reference-project__signal">FUNNEL / 01</div>
               <img src="assets/partner-logos/rueckengesundheits-center.png" alt="Rückengesundheitscenter Gleisdorf Logo" width="546" height="544" loading="lazy" decoding="async">
             </div>
-            <div class="reference-project__content">
+            <div class="reference-project__content" data-index="05">
               <div class="reference-project__meta"><span>Lead-Funnel</span><span>Gesundheit</span></div>
               <h2>Rücken-Gesund</h2>
               <p>Ein fokussierter Funnel für EMS-Training und Kryotherapie in Gleisdorf. Nutzen, persönliche Betreuung und Angebot werden klar priorisiert, damit aus Aufmerksamkeit ein verständlicher nächster Schritt und schließlich eine Anfrage wird.</p>
@@ -187,12 +190,12 @@
             </div>
           </article>
 
-          <article class="reference-project reveal" id="competence-in-motion">
+          <article class="reference-project reveal" id="competence-in-motion" data-index="06">
             <div class="reference-project__visual reference-project__visual--logo reference-project__visual--cim">
               <div class="reference-project__signal">HEALTH / 01</div>
               <img src="assets/partner-logos/cim-physiotherapie.png" alt="Competence in Motion Logo" width="402" height="308" loading="lazy" decoding="async">
             </div>
-            <div class="reference-project__content">
+            <div class="reference-project__content" data-index="06">
               <div class="reference-project__meta"><span>Referenzkunde</span><span>Gesundheitswesen</span></div>
               <h2>Competence in Motion</h2>
               <p>Physiotherapie, Sportphysiotherapie, Training sowie Gang- und Laufanalyse in Graz – mit einem klaren Fokus auf Bewegung, individuelle Betreuung und fachlich fundierte Therapie.</p>
@@ -227,6 +230,6 @@
   </footer>
 
   <div class="floating-cta" id="floating-cta"><a href="/#kontakt" class="btn btn--primary btn--magnetic">💬 Projekt besprechen</a></div>
-  <script src="js/main.js?v=20261005b" defer></script>
+  <script src="js/main.js?v=20261006a" defer></script>
 </body>
 </html>
