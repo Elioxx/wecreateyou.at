@@ -8043,9 +8043,10 @@ body::after {
 
 .ads-case__copy > span { color: #a78bfa; font-size: 0.7rem; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; }
 .ads-case__copy h3 { margin: 0.7rem 0 1rem; font-size: clamp(2rem, 4vw, 3.7rem); line-height: 0.98; letter-spacing: -0.05em; }
-.ads-case__copy p { color: rgba(255,255,255,0.58); line-height: 1.7; }
-.ads-case__copy ul { display: flex; flex-wrap: wrap; gap: 0.45rem; margin: 1.4rem 0; padding: 0; list-style: none; }
-.ads-case__copy li { padding: 0.4rem 0.65rem; border: 1px solid rgba(255,255,255,0.1); border-radius: 999px; color: rgba(255,255,255,0.68); font-size: 0.72rem; }
+.ads-case__story { display: grid; gap: 0.75rem; margin: 0.5rem 0 1.5rem; }
+.ads-case__story > div { display: grid; grid-template-columns: 92px 1fr; gap: 0.9rem; padding-top: 0.75rem; border-top: 1px solid rgba(255,255,255,0.08); }
+.ads-case__story b { color: rgba(255,255,255,0.88); font-size: 0.68rem; letter-spacing: 0.08em; text-transform: uppercase; }
+.ads-case__story p { margin: 0; color: rgba(255,255,255,0.58); font-size: 0.86rem; line-height: 1.55; }
 .ads-case__copy a { width: fit-content; margin-top: auto; color: #c4a7ff; font-weight: 800; text-decoration: none; }
 
 .ads-case__visual {
@@ -8134,6 +8135,7 @@ body::after {
   .ads-problem { min-height: 220px; }
   .ads-case { grid-template-columns: 46px 1fr; }
   .ads-case__copy { padding: 2rem 1.35rem; }
+  .ads-case__story > div { grid-template-columns: 1fr; gap: 0.35rem; }
   .ads-case__visual { min-height: 260px; }
   .ads-footer { padding-bottom: 5.5rem; }
   .ads-footer .container { align-items: flex-start; flex-direction: column; }
