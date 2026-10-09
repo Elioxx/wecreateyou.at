@@ -47,7 +47,7 @@
 
   <!-- Performance: Font preloaden (self-hosted, render-kritisch) -->
   <link rel="preload" href="assets/fonts/inter-latin-var.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="css/style.css?v=20261005b">
+  <link rel="stylesheet" href="css/style.css?v=20261009a">
 
   <!-- ===== Structured Data (JSON-LD) ===== -->
   <script type="application/ld+json">
@@ -1198,8 +1198,8 @@
           <span class="section-label">Ausgewählte Projekte</span>
           <h2 class="section-title">Nicht nur Konzepte.<br><span class="text-gradient">Funktionierende Lösungen.</span></h2>
           <p class="section-subtitle">
-            Individuell entwickelte Systeme für echte Abläufe – vom Lager über die Angebotserstellung bis zur Terminbuchung.
-            Einige Projekte dürfen wir namentlich zeigen, andere stellen wir aus Vertraulichkeitsgründen abstrahiert dar.
+            Drei reale Projekte, drei unterschiedliche Geschäftsprobleme: interne Verwaltung, digitaler Vertrieb
+            und KI-gestützte Dokumentation. Klar benannt und direkt nachvollziehbar.
           </p>
         </div>
 
@@ -1262,82 +1262,65 @@
           <a href="https://pentanova.wecreateyou.website/" target="_blank" rel="noopener noreferrer" class="btn btn--secondary case-study__cta">PentaNova USA öffnen <span class="btn-arrow">↗</span></a>
         </div>
 
-        <!-- Case Study 2: fiktive Projektmarke zur anonymisierten Kundenlösung -->
-        <div class="case-study case-study--montara reveal">
+        <!-- Case Study 2: Penta4PLC -->
+        <div class="case-study case-study--penta4plc reveal" id="penta4plc-case">
           <div class="case-study__content">
-            <div class="case-study__eyebrow"><span>SYSTEM / 02</span><strong>MONTARA · GEBÄUDETECHNIK</strong></div>
-            <span class="case-study__tag">KI-Assistent für Angebotserstellung</span>
-            <h3 class="case-study__title">Angebote direkt von der Baustelle vorbereiten</h3>
+            <div class="case-study__eyebrow"><span>E-COMMERCE / 01</span><strong>PENTA4PLC · INDUSTRIAL PARTS</strong></div>
+            <span class="case-study__tag">B2B-Onlineshop für Industriekomponenten</span>
+            <h3 class="case-study__title">Aus Lagerbestand wird ein digitaler Vertriebskanal</h3>
             <p class="case-study__description">
-              Der mobile KI-Assistent erfasst Leistungen, Mengen und Besonderheiten direkt auf der Baustelle.
-              Der Monteur spricht die relevanten Informationen einfach ein. Daraus entsteht ein strukturierter
-              Angebotsentwurf, den das Büro nur noch prüfen und freigeben muss.
+              Für Penta4PLC haben wir einen internationalen B2B-Onlineshop aufgebaut. Produktsuche, Kategorien,
+              Live-Bestände, Warenkorb und Anfrageprozess führen Interessierte von der Suche direkt zum passenden
+              Industriebauteil.
             </p>
             <div class="case-study__metrics">
               <div class="case-study__metric">
-                <div class="case-study__metric-value">Baustellenmodus</div>
-                <div class="case-study__metric-label">Freihändig vor Ort erfassen</div>
+                <div class="case-study__metric-value">778 Artikel</div>
+                <div class="case-study__metric-label">Direkt aus dem Bestand</div>
               </div>
               <div class="case-study__metric">
-                <div class="case-study__metric-value">Leistungsverzeichnis</div>
-                <div class="case-study__metric-label">Positionen automatisch ordnen</div>
+                <div class="case-study__metric-value">16 Kategorien</div>
+                <div class="case-study__metric-label">Schnell auffindbar</div>
               </div>
               <div class="case-study__metric">
-                <div class="case-study__metric-value">Freigabebereit</div>
-                <div class="case-study__metric-label">Saubere Übergabe ans Büro</div>
+                <div class="case-study__metric-value">B2B Checkout</div>
+                <div class="case-study__metric-label">Bestellung oder Anfrage</div>
               </div>
             </div>
           </div>
           <div class="case-study__visual">
-            <div class="case-study__mockup">
-              <div class="case-study__mockup-bar">
-                <span class="case-study__mockup-dot"></span>
-                <span class="case-study__mockup-dot"></span>
-                <span class="case-study__mockup-dot"></span>
-                <span class="case-study__client-mark">M</span>
-                <span class="case-study__mockup-title">MONTARA · FIELD QUOTE</span>
-                <span class="case-study__mockup-status"><span class="case-study__mockup-status-dot"></span>Baustelle aktiv</span>
-              </div>
-              <div class="case-study__mockup-body">
-                <div class="case-study__mockup-bubble case-study__mockup-bubble--user">Heizkreis im Obergeschoss erneuern, sechs Ventile tauschen, Anfahrt und Montage aufnehmen.</div>
-                <div class="case-study__mockup-bubble case-study__mockup-bubble--ai">Verstanden. Ich strukturiere Material, Arbeitszeit und Anfahrt …</div>
-                <div class="case-study__mockup-result">
-                  <div class="case-study__mockup-result-header">
-                    <span class="case-study__mockup-check">✓</span>
-                    Entwurf #MT-2481 bereit
-                  </div>
-                  <div class="case-study__mockup-row"><span>Heizkreis OG</span><span>1 Pauschale</span></div>
-                  <div class="case-study__mockup-row"><span>Ventile & Montage</span><span>6 Stück</span></div>
-                  <div class="case-study__mockup-row case-study__mockup-row--total"><span>Status</span><span>Prüfung im Büro</span></div>
-                </div>
-              </div>
+            <div class="penta-shop" aria-hidden="true">
+              <div class="penta-shop__bar"><strong>penta<span>4</span>plc</strong><div></div><b>Cart · 0</b></div>
+              <div class="penta-shop__hero"><small>INDUSTRIAL COMPONENTS DIRECT FROM STOCK</small><strong>Your B2B Shop for<br>Industrial Electronics</strong><span>778 items · 16 categories · 24h lead time</span></div>
+              <div class="penta-shop__products"><i></i><i></i><i></i><i></i></div>
             </div>
           </div>
+          <a href="https://penta4plc.wecreateyou.website" target="_blank" rel="noopener noreferrer" class="btn btn--secondary case-study__cta">Penta4PLC öffnen <span class="btn-arrow">↗</span></a>
         </div>
 
-        <!-- Case Study 3: fiktive Projektmarke zur anonymisierten Kundenlösung -->
-        <div class="case-study case-study--vitalora reveal">
+        <!-- Case Study 3: Competence in Motion -->
+        <div class="case-study case-study--cim reveal" id="cim-case">
           <div class="case-study__content">
-            <div class="case-study__eyebrow"><span>SYSTEM / 03</span><strong>VITALORA · PHYSIOZENTRUM</strong></div>
-            <span class="case-study__tag">KI-Telefonassistent & Terminlogik</span>
-            <h3 class="case-study__title">Anfragen automatisch verstehen und direkt terminieren</h3>
+            <div class="case-study__eyebrow"><span>AUTOMATION / 01</span><strong>COMPETENCE IN MOTION · GRAZ</strong></div>
+            <span class="case-study__tag">Transkription & Patientendokumentation</span>
+            <h3 class="case-study__title">Weniger Schreibarbeit nach der Behandlung</h3>
             <p class="case-study__description">
-              Der Sprachassistent versteht Anliegen und Behandlungsart, prüft passende Therapeut:innen sowie
-              freie Räume und bestätigt den Termin direkt im Gespräch – inklusive Standort, Dauer und
-              automatischer Erinnerung.
+              Für Competence in Motion haben wir eine automatisierte Transkription mit strukturierter
+              Patientendokumentation eingerichtet. Gesprochene Notizen werden für die weitere Dokumentation
+              übersichtlich aufbereitet, damit im Praxisalltag weniger Zeit in manuelle Schreibarbeit fließt.
             </p>
             <div class="case-study__metrics">
               <div class="case-study__metric">
-                <div class="case-study__metric-value">Rezeption 24/7</div>
-                <div class="case-study__metric-label">Auch außerhalb der Öffnungszeiten</div>
+                <div class="case-study__metric-value">Transkription</div>
+                <div class="case-study__metric-label">Gesprochene Notizen erfassen</div>
               </div>
               <div class="case-study__metric">
-                <div class="case-study__metric-value">Therapie-Matching</div>
-                <div class="case-study__metric-label">Anliegen passend zuordnen</div>
+                <div class="case-study__metric-value">Strukturiert</div>
+                <div class="case-study__metric-label">Dokumentation vorbereiten</div>
               </div>
               <div class="case-study__metric">
-                <div class="case-study__metric-value">Recall inklusive</div>
-                <div class="case-study__metric-label">Bestätigung & Erinnerung senden</div>
+                <div class="case-study__metric-value">Praxisnah</div>
+                <div class="case-study__metric-label">In den Ablauf integriert</div>
               </div>
             </div>
           </div>
@@ -1347,28 +1330,28 @@
                 <span class="case-study__mockup-dot"></span>
                 <span class="case-study__mockup-dot"></span>
                 <span class="case-study__mockup-dot"></span>
-                <span class="case-study__client-mark">V</span>
-                <span class="case-study__mockup-title">VITALORA · PHONE DESK</span>
-                <span class="case-study__mockup-status"><span class="case-study__mockup-status-dot"></span>Gespräch · 02:14</span>
+                <span class="case-study__client-mark">C</span>
+                <span class="case-study__mockup-title">COMPETENCE IN MOTION · DOCUMENTATION</span>
+                <span class="case-study__mockup-status"><span class="case-study__mockup-status-dot"></span>Transkription aktiv</span>
               </div>
               <div class="case-study__mockup-body">
                 <div class="case-study__mockup-waveform">
                   <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
                 </div>
-                <div class="case-study__mockup-bubble case-study__mockup-bubble--user">Ich brauche einen Termin wegen anhaltender Rückenschmerzen, am besten nach der Arbeit.</div>
-                <div class="case-study__mockup-bubble case-study__mockup-bubble--ai">Bei Lea ist am Donnerstag um 17:30 Uhr ein Termin für Physiotherapie frei. Soll ich buchen?</div>
+                <div class="case-study__mockup-bubble case-study__mockup-bubble--user">Beweglichkeit verbessert, Belastung gut toleriert, nächste Einheit mit Fokus auf Stabilisation.</div>
+                <div class="case-study__mockup-bubble case-study__mockup-bubble--ai">Notiz transkribiert und nach Befund, Verlauf und nächstem Schritt strukturiert.</div>
                 <div class="case-study__mockup-result">
                   <div class="case-study__mockup-result-header">
                     <span class="case-study__mockup-check">✓</span>
-                    Ersttermin bestätigt
+                    Dokumentation vorbereitet
                   </div>
-                  <div class="case-study__mockup-row"><span>Do · 17:30 Uhr</span><span>50 Minuten</span></div>
-                  <div class="case-study__mockup-row"><span>Standort</span><span>Graz · Zentrum</span></div>
+                  <div class="case-study__mockup-row"><span>Status</span><span>Zur fachlichen Prüfung</span></div>
+                  <div class="case-study__mockup-row"><span>Bereiche</span><span>Befund · Verlauf · Plan</span></div>
                 </div>
               </div>
             </div>
           </div>
-          <a href="https://telefonassistent.wecreateyou.website" target="_blank" rel="noopener" class="btn btn--secondary case-study__cta">Live testen</a>
+          <a href="/referenzen.html#competence-in-motion" class="btn btn--secondary case-study__cta">Case Study ansehen <span class="btn-arrow">→</span></a>
         </div>
       </div>
     </section>
@@ -1438,7 +1421,14 @@
             </div>
           </div>
 
-          <form class="contact-form" id="contact-form" action="contact.php" method="POST">
+          <form class="contact-form" id="contact-form" action="contact.php" method="POST" data-conversion-form="homepage_contact">
+            <input type="hidden" name="source" value="homepage">
+            <input type="hidden" name="utm_source" value="">
+            <input type="hidden" name="utm_medium" value="">
+            <input type="hidden" name="utm_campaign" value="">
+            <input type="hidden" name="utm_term" value="">
+            <input type="hidden" name="utm_content" value="">
+            <input type="hidden" name="gclid" value="">
             <div class="contact-form__row">
               <div class="contact-form__group">
                 <label class="contact-form__label" for="contact-name">Name *</label>
@@ -1557,6 +1547,6 @@
     </a>
   </div>
 
-  <script src="js/main.js?v=20261006b" defer></script>
+  <script src="js/main.js?v=20261009a" defer></script>
 </body>
 </html>

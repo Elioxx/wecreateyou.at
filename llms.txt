@@ -60,6 +60,7 @@ Ein unverbindlicher Prozess-Check dient dazu, den aktuellen Ablauf, den größte
 - Startseite und Leistungsübersicht: https://wecreateyou.at/
 - Prozessanalyse: https://wecreateyou.at/#process-intelligence
 - Referenzen und digitale Projekte: https://wecreateyou.at/referenzen.html
+- Landingpage Digitalisierung für KMU: https://wecreateyou.at/digitalisierung-kmu.html
 - Team: https://wecreateyou.at/#team
 - Kontakt: https://wecreateyou.at/#kontakt
 - Impressum: https://wecreateyou.at/impressum.html

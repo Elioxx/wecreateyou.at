@@ -80,6 +80,13 @@ $email   = trim((string)($_POST['email'] ?? ''));
 $company = mb_substr(clean((string)($_POST['company'] ?? '')), 0, 200);
 $branch  = mb_substr(clean((string)($_POST['branch'] ?? '')), 0, 100);
 $message = mb_substr(trim((string)($_POST['message'] ?? '')), 0, MAX_LEN);
+$source  = mb_substr(clean((string)($_POST['source'] ?? 'website')), 0, 100);
+$utmSource   = mb_substr(clean((string)($_POST['utm_source'] ?? '')), 0, 200);
+$utmMedium   = mb_substr(clean((string)($_POST['utm_medium'] ?? '')), 0, 200);
+$utmCampaign = mb_substr(clean((string)($_POST['utm_campaign'] ?? '')), 0, 200);
+$utmTerm     = mb_substr(clean((string)($_POST['utm_term'] ?? '')), 0, 300);
+$utmContent  = mb_substr(clean((string)($_POST['utm_content'] ?? '')), 0, 300);
+$gclid       = mb_substr(clean((string)($_POST['gclid'] ?? '')), 0, 500);
 
 if ($name === '' || $email === '') {
     fail(422, 'Name und E-Mail sind Pflichtfelder.');
@@ -99,7 +106,9 @@ $branchLabels = [
 ];
 $branchLabel = $branchLabels[$branch] ?? ($branch !== '' ? $branch : '-');
 
-$subject = 'Neue Kontaktanfrage über wecreateyou.at';
+$subject = $source === 'google_ads_landingpage'
+    ? 'Neue Google-Ads-Anfrage über wecreateyou.at'
+    : 'Neue Kontaktanfrage über wecreateyou.at';
 
 $body  = "Neue Anfrage über das Kontaktformular:\n\n";
 $body .= "Name: {$name}\n";
@@ -107,6 +116,13 @@ $body .= "E-Mail: {$email}\n";
 $body .= "Unternehmen: " . ($company !== '' ? $company : '-') . "\n";
 $body .= "Branche: {$branchLabel}\n\n";
 $body .= "Nachricht:\n" . ($message !== '' ? $message : '-') . "\n";
+$body .= "\nHerkunft: {$source}\n";
+$body .= "UTM Source: " . ($utmSource !== '' ? $utmSource : '-') . "\n";
+$body .= "UTM Medium: " . ($utmMedium !== '' ? $utmMedium : '-') . "\n";
+$body .= "UTM Campaign: " . ($utmCampaign !== '' ? $utmCampaign : '-') . "\n";
+$body .= "UTM Term: " . ($utmTerm !== '' ? $utmTerm : '-') . "\n";
+$body .= "UTM Content: " . ($utmContent !== '' ? $utmContent : '-') . "\n";
+$body .= "GCLID: " . ($gclid !== '' ? $gclid : '-') . "\n";
 
 // Sichere Header ohne Injection-Risiko: eigene Absenderadresse, Reply-To aus Formular
 $headers = [];

@@ -16,6 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initTypewriter();
   initFloatingCTA();
   initHeroParallax();
+  initCampaignAttribution();
 });
 
 /* ---------- Sticky Navigation ---------- */
@@ -57,6 +58,51 @@ function initNavigation() {
       });
     });
   }
+}
+
+/* ---------- Campaign Attribution & Conversion Events ---------- */
+function initCampaignAttribution() {
+  const fields = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content', 'gclid'];
+  const params = new URLSearchParams(window.location.search);
+  let attribution = {};
+
+  try {
+    attribution = JSON.parse(sessionStorage.getItem('wcy_campaign_attribution') || '{}');
+  } catch (e) {
+    attribution = {};
+  }
+
+  fields.forEach((field) => {
+    const value = params.get(field);
+    if (value) attribution[field] = value.substring(0, 500);
+  });
+
+  if (Object.keys(attribution).length) {
+    try {
+      sessionStorage.setItem('wcy_campaign_attribution', JSON.stringify(attribution));
+    } catch (e) { /* sessionStorage may be unavailable */ }
+  }
+
+  document.querySelectorAll('form').forEach((form) => {
+    fields.forEach((field) => {
+      const input = form.querySelector(`[name="${field}"]`);
+      if (input && attribution[field]) input.value = attribution[field];
+    });
+  });
+
+  document.querySelectorAll('[data-track-cta]').forEach((element) => {
+    element.addEventListener('click', () => {
+      pushTrackingEvent('wcy_cta_click', {
+        cta_name: element.getAttribute('data-track-cta') || 'unknown',
+        page_path: window.location.pathname
+      });
+    });
+  });
+}
+
+function pushTrackingEvent(eventName, parameters) {
+  if (!Array.isArray(window.dataLayer)) return;
+  window.dataLayer.push(Object.assign({ event: eventName }, parameters || {}));
 }
 
 /* ---------- Scroll Reveal (Intersection Observer) ---------- */
@@ -387,6 +433,12 @@ document.addEventListener('submit', (e) => {
       btn.innerHTML = '<span style="display:inline-flex;align-items:center;gap:8px;">✓ Nachricht gesendet!</span>';
       btn.style.background = 'linear-gradient(135deg, #10B981, #059669)';
       btn.style.opacity = '1';
+
+      pushTrackingEvent('generate_lead', {
+        form_name: form.getAttribute('data-conversion-form') || form.id || 'contact_form',
+        lead_source: form.querySelector('[name="source"]')?.value || 'website',
+        page_path: window.location.pathname
+      });
 
       setTimeout(() => {
         btn.innerHTML = originalHTML;
