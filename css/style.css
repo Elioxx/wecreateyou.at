@@ -7836,11 +7836,11 @@ body::after {
 }
 
 .ads-hero h1 {
-  max-width: 800px;
+  max-width: 740px;
   margin: 1.5rem 0;
-  font-size: clamp(3.3rem, 6.7vw, 7rem);
-  line-height: 0.93;
-  letter-spacing: -0.07em;
+  font-size: clamp(3rem, 4.8vw, 5.15rem);
+  line-height: 0.98;
+  letter-spacing: -0.055em;
 }
 
 .ads-hero__lead {
@@ -7851,6 +7851,32 @@ body::after {
 }
 
 .ads-hero__lead strong { color: #fff; }
+
+.ads-hero__person {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  width: fit-content;
+  margin-top: 1.35rem;
+  padding: 0.55rem 1rem 0.55rem 0.55rem;
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 18px;
+  background: rgba(255,255,255,0.035);
+}
+
+.ads-hero__person img {
+  width: 64px;
+  height: 64px;
+  flex: 0 0 auto;
+  border: 2px solid rgba(196,167,255,0.38);
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+.ads-hero__person div { display: grid; gap: 0.08rem; }
+.ads-hero__person span { color: #c8a4ff; font-size: 0.61rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; }
+.ads-hero__person strong { font-size: 0.95rem; }
+.ads-hero__person small { color: rgba(255,255,255,0.5); font-size: 0.72rem; }
 
 .ads-checks {
   display: grid;
@@ -8170,7 +8196,8 @@ body::after {
   .ads-nav__phone { display: none; }
   .ads-nav .btn { padding: 0.65rem 0.8rem; font-size: 0.76rem; }
   .ads-hero { min-height: auto; padding: 118px 0 64px; }
-  .ads-hero h1 { font-size: clamp(3rem, 15vw, 4.6rem); }
+  .ads-hero h1 { font-size: clamp(2.45rem, 9.5vw, 3.5rem); }
+  .ads-hero__person { width: 100%; }
   .ads-hero__actions { display: grid; }
   .ads-hero__actions .btn { justify-content: center; }
   .ads-proofline { align-items: flex-start; flex-direction: column; }
