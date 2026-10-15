@@ -87,6 +87,7 @@ $utmCampaign = mb_substr(clean((string)($_POST['utm_campaign'] ?? '')), 0, 200);
 $utmTerm     = mb_substr(clean((string)($_POST['utm_term'] ?? '')), 0, 300);
 $utmContent  = mb_substr(clean((string)($_POST['utm_content'] ?? '')), 0, 300);
 $gclid       = mb_substr(clean((string)($_POST['gclid'] ?? '')), 0, 500);
+$newsletterInterest = (string)($_POST['newsletter_interest'] ?? '') === 'yes';
 
 if ($name === '' || $email === '') {
     fail(422, 'Name und E-Mail sind Pflichtfelder.');
@@ -106,9 +107,11 @@ $branchLabels = [
 ];
 $branchLabel = $branchLabels[$branch] ?? ($branch !== '' ? $branch : '-');
 
-$subject = $source === 'google_ads_landingpage'
-    ? 'Neue Google-Ads-Anfrage über wecreateyou.at'
-    : 'Neue Kontaktanfrage über wecreateyou.at';
+$subject = match ($source) {
+    'google_ads_landingpage' => 'Neue Google-Ads-Anfrage über wecreateyou.at',
+    'lead_magnet' => 'Neuer Download: KMU-Automatisierungs-Check',
+    default => 'Neue Kontaktanfrage über wecreateyou.at',
+};
 
 $body  = "Neue Anfrage über das Kontaktformular:\n\n";
 $body .= "Name: {$name}\n";
@@ -123,6 +126,7 @@ $body .= "UTM Campaign: " . ($utmCampaign !== '' ? $utmCampaign : '-') . "\n";
 $body .= "UTM Term: " . ($utmTerm !== '' ? $utmTerm : '-') . "\n";
 $body .= "UTM Content: " . ($utmContent !== '' ? $utmContent : '-') . "\n";
 $body .= "GCLID: " . ($gclid !== '' ? $gclid : '-') . "\n";
+$body .= "Interesse an KMU-Prozess-Impulsen: " . ($newsletterInterest ? 'Ja' : 'Nein') . "\n";
 
 // Sichere Header ohne Injection-Risiko: eigene Absenderadresse, Reply-To aus Formular
 $headers = [];

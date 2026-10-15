@@ -411,7 +411,8 @@ document.addEventListener('submit', (e) => {
 
   const form = e.target;
   const btn = form.querySelector('.contact-form__submit');
-  const note = form.querySelector('#contact-form-note');
+  const note = form.querySelector('.contact-form__note');
+  const downloadUrl = form.getAttribute('data-download-url');
   const originalHTML = btn.innerHTML;
   const originalNoteHTML = note ? note.innerHTML : '';
 
@@ -430,7 +431,9 @@ document.addEventListener('submit', (e) => {
     .then((data) => {
       if (!data.ok) throw new Error(data.error || 'Die Nachricht konnte nicht gesendet werden.');
 
-      btn.innerHTML = '<span style="display:inline-flex;align-items:center;gap:8px;">✓ Nachricht gesendet!</span>';
+      btn.innerHTML = downloadUrl
+        ? '<span style="display:inline-flex;align-items:center;gap:8px;">✓ Download startet...</span>'
+        : '<span style="display:inline-flex;align-items:center;gap:8px;">✓ Nachricht gesendet!</span>';
       btn.style.background = 'linear-gradient(135deg, #10B981, #059669)';
       btn.style.opacity = '1';
 
@@ -439,6 +442,19 @@ document.addEventListener('submit', (e) => {
         lead_source: form.querySelector('[name="source"]')?.value || 'website',
         page_path: window.location.pathname
       });
+
+      if (downloadUrl) {
+        pushTrackingEvent('lead_magnet_download', {
+          file_name: downloadUrl.split('/').pop(),
+          page_path: window.location.pathname
+        });
+        const downloadLink = document.createElement('a');
+        downloadLink.href = downloadUrl;
+        downloadLink.download = '';
+        document.body.appendChild(downloadLink);
+        downloadLink.click();
+        downloadLink.remove();
+      }
 
       setTimeout(() => {
         btn.innerHTML = originalHTML;

@@ -8,6 +8,12 @@ RewriteRule ^landing/?$ / [R=301,L]
 RewriteRule ^portfolio-5/?$ /referenzen.html [R=301,L]
 RewriteRule ^referenzprojekte/?$ /referenzen.html [R=301,L]
 
+# Short, memorable destination for paid campaigns. Keep the public URL clean
+# while serving the existing optimized landing page internally.
+RewriteCond %{THE_REQUEST} \s/+digitalisierung-kmu\.html(?:[?\s]) [NC]
+RewriteRule ^digitalisierung-kmu\.html$ /landingpage [R=301,L]
+RewriteRule ^landingpage/?$ /digitalisierung-kmu.html [END]
+
 # Baseline security headers. The CSP stays conservative because the current
 # pages still contain a small number of intentional inline styles.
 <IfModule mod_headers.c>
