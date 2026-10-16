@@ -16,7 +16,7 @@
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/brand/logo-tech-180.png">
   <meta name="theme-color" content="#0a0a0f">
   <link rel="preload" href="/assets/fonts/inter-latin-var.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="/css/style.css?v=20261016a">
+  <link rel="stylesheet" href="/css/style.css?v=20261016b">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -168,13 +168,15 @@
       <div class="container">
         <div class="ads-section-head reveal">
           <span class="section-label">Reale Case Studies</span>
-          <h2 class="section-title">Nicht nur versprochen.<br><span class="text-gradient">Bereits umgesetzt.</span></h2>
+          <h2 class="section-title">Drei Systeme.<br><span class="text-gradient">Drei konkrete Resultate.</span></h2>
+          <p>Keine Demo-Projekte: echte digitale Lösungen, die Informationen bündeln, Verkäufe ermöglichen und manuelle Arbeit reduzieren.</p>
         </div>
         <div class="ads-case-list">
           <article class="ads-case reveal">
             <div class="ads-case__number">01</div>
             <div class="ads-case__copy">
               <span>Interne Plattform · Industrie</span><h3>PentaNova USA</h3>
+              <div class="ads-case__impact"><strong>Live-Bestand</strong><strong>Zentraler Zugriff</strong></div>
               <p class="ads-case__summary">Eine geschützte Lagerplattform bündelt Live-Bestand und Stammdaten. Das Team findet alle Informationen zentral statt in verstreuten Listen.</p>
               <a href="https://pentanova.wecreateyou.website/" target="_blank" rel="noopener noreferrer">Projekt öffnen ↗</a>
             </div>
@@ -184,6 +186,7 @@
             <div class="ads-case__number">02</div>
             <div class="ads-case__copy">
               <span>B2B E-Commerce · Industrie</span><h3>Penta4PLC</h3>
+              <div class="ads-case__impact"><strong>778 Artikel</strong><strong>16 Kategorien</strong></div>
               <p class="ads-case__summary">Ein B2B-Shop macht 778 Industrieartikel in 16 Kategorien digital auffindbar – inklusive Produktsuche, Bestellung und Anfrage.</p>
               <a href="https://penta4plc.wecreateyou.website" target="_blank" rel="noopener noreferrer">Onlineshop öffnen ↗</a>
             </div>
@@ -193,6 +196,7 @@
             <div class="ads-case__number">03</div>
             <div class="ads-case__copy">
               <span>KI-Automatisierung · Physiotherapie</span><h3>Competence in Motion</h3>
+              <div class="ads-case__impact"><strong>Automatische Transkription</strong><strong>Weniger Schreibarbeit</strong></div>
               <p class="ads-case__summary">Eine automatisierte Transkription bereitet gesprochene Notizen für die Patientendokumentation auf und reduziert manuelle Schreibarbeit.</p>
               <a href="/referenzen.html#competence-in-motion">Case Study ansehen →</a>
             </div>
@@ -221,6 +225,36 @@
           <details open><summary>Für welche KMU eignet sich ein Prozess-Check?</summary><p>Für Unternehmen mit wiederkehrender Büroarbeit, doppelter Dateneingabe, manuellen Übergaben oder verstreuten Informationen. Entscheidend ist nicht die Branche, sondern ein klar wiederkehrender Ablauf.</p></details>
           <details><summary>Sind 8 Stunden Zeitersparnis garantiert?</summary><p>Nein. Im kostenlosen Erst-Check prüfen wir, welches realistische Zeitpotenzial in deinem konkreten Prozess steckt. Wir setzen nur um, was technisch und wirtschaftlich sinnvoll ist.</p></details>
           <details><summary>Muss bestehende Software ersetzt werden?</summary><p>Nicht zwingend. Bestehende Systeme können häufig über Schnittstellen verbunden und um passende Workflows ergänzt werden.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <section class="ads-newsletter" id="checkliste">
+      <div class="container">
+        <div class="ads-newsletter__card reveal">
+          <div class="ads-newsletter__copy">
+            <span class="section-label">Kostenlose Checkliste + Prozess-Impulse</span>
+            <h2>Finde deinen größten <span class="text-gradient">Automatisierungshebel.</span></h2>
+            <p>Hol dir den 2-Seiten-Selbstcheck. Wenn du möchtest, informieren wir dich zusätzlich über kurze, praktische Automatisierungsideen für KMU.</p>
+          </div>
+          <form class="contact-form ads-newsletter__form" action="/contact.php" method="POST" data-conversion-form="lead_magnet" data-download-url="/output/pdf/kmu-automatisierungs-check.pdf">
+            <input type="hidden" name="source" value="lead_magnet">
+            <input type="hidden" name="message" value="KMU-Automatisierungs-Check heruntergeladen">
+            <input type="hidden" name="utm_source" value="">
+            <input type="hidden" name="utm_medium" value="">
+            <input type="hidden" name="utm_campaign" value="">
+            <input type="hidden" name="utm_term" value="">
+            <input type="hidden" name="utm_content" value="">
+            <input type="hidden" name="gclid" value="">
+            <div class="ads-newsletter__fields">
+              <div class="contact-form__group"><label class="contact-form__label" for="check-name">Name *</label><input class="contact-form__input" id="check-name" name="name" type="text" autocomplete="name" required placeholder="Vor- und Nachname"></div>
+              <div class="contact-form__group"><label class="contact-form__label" for="check-email">E-Mail *</label><input class="contact-form__input" id="check-email" name="email" type="email" autocomplete="email" required placeholder="name@unternehmen.at"></div>
+            </div>
+            <label class="ads-newsletter-optin"><input type="checkbox" name="newsletter_interest" value="yes"><span>Ja, ich möchte kurze KMU-Prozess-Impulse per E-Mail erhalten. Abmeldung jederzeit möglich.</span></label>
+            <div class="ads-honeypot" aria-hidden="true"><label for="check-website">Website</label><input id="check-website" name="website" type="text" tabindex="-1" autocomplete="off"></div>
+            <button type="submit" class="btn btn--secondary contact-form__submit">Checkliste kostenlos herunterladen <span class="btn-arrow">↓</span></button>
+            <p class="contact-form__note">Sofortiger Download · Newsletter nur mit Häkchen · <a href="/datenschutz.html">Datenschutz</a></p>
+          </form>
         </div>
       </div>
     </section>
