@@ -8086,7 +8086,7 @@ body::after {
   background-size: 58px 58px, 58px 58px, auto;
 }
 
-.ads-case-list { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.25rem; }
+.ads-case-list { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1rem; }
 
 .ads-case {
   position: relative;
@@ -8167,6 +8167,9 @@ body::after {
 .ads-case__visual--cim { background: linear-gradient(145deg, #edf3f5, #cbdde4); }
 .ads-case__visual--cim img { width: min(76%, 260px); height: 180px; object-fit: contain; }
 .ads-case__visual--cim i { border-color: rgba(30,50,60,0.14); color: #34515e; background: rgba(255,255,255,0.45); }
+.ads-case__visual--hoge { background: linear-gradient(145deg, #eef6fa, #c9e1ec); }
+.ads-case__visual--hoge img { width: min(82%, 250px); height: 150px; object-fit: contain; }
+.ads-case__visual--hoge i { border-color: rgba(24,82,108,0.16); color: #245f79; background: rgba(255,255,255,0.5); }
 .ads-cases__more { display: flex; justify-content: center; margin-top: 2rem; }
 
 .ads-process { background: #090a0f; }
@@ -8239,9 +8242,9 @@ body::after {
   .ads-leadmagnet__preview { width: min(100%, 460px); min-height: 580px; margin: 0 auto; }
   .ads-process__steps { grid-template-columns: repeat(2, 1fr); }
   .ads-regional .regional-trust__layout { grid-template-columns: 1fr; }
-  .ads-case-list { grid-template-columns: 1fr; }
-  .ads-case { display: grid; grid-template-columns: minmax(0, 1fr) minmax(260px, 0.62fr); }
-  .ads-case__visual { order: 0; min-height: 260px; }
+  .ads-case-list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .ads-case { display: flex; }
+  .ads-case__visual { order: -1; min-height: 220px; }
   .ads-faq__layout { grid-template-columns: 1fr; }
   .ads-newsletter__card { grid-template-columns: minmax(0, 1fr); }
   .ads-final__card { align-items: flex-start; flex-direction: column; }
@@ -8270,6 +8273,7 @@ body::after {
   .ads-leadmagnet__sheet--back { right: 9%; }
   .ads-leadmagnet__badge { right: 0; }
   .ads-case { display: flex; }
+  .ads-case-list { grid-template-columns: 1fr; }
   .ads-case__copy { padding: 2rem 1.35rem; }
   .ads-case__visual { order: -1; min-height: 220px; }
   .ads-newsletter__fields { grid-template-columns: 1fr; }
