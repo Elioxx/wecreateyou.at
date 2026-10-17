@@ -218,15 +218,18 @@
       </div>
     </section>
 
-    <section class="ads-newsletter" id="checkliste">
-      <div class="container">
-        <div class="ads-newsletter__card reveal">
-          <div class="ads-newsletter__copy">
-            <span class="section-label">Kostenlose Checkliste + Prozess-Impulse</span>
-            <h2>Finde deinen größten <span class="text-gradient">Automatisierungshebel.</span></h2>
-            <p>Hol dir den 2-Seiten-Selbstcheck. Wenn du möchtest, informieren wir dich zusätzlich über kurze, praktische Automatisierungsideen für KMU.</p>
-          </div>
-          <form class="contact-form ads-newsletter__form" action="/contact.php" method="POST" data-conversion-form="lead_magnet" data-download-url="/output/pdf/kmu-automatisierungs-check.pdf">
+    <section class="section ads-leadmagnet" id="checkliste">
+      <div class="container ads-leadmagnet__layout">
+        <div class="ads-leadmagnet__content reveal">
+          <span class="section-label">Kostenlose 2-Seiten-Checkliste</span>
+          <h2 class="section-title">Finde in 10 Minuten deinen größten <span class="text-gradient">Automatisierungshebel.</span></h2>
+          <p>Der KMU-Automatisierungs-Check zeigt dir, bei welchen wiederkehrenden Abläufen sich ein genauerer Blick lohnt.</p>
+          <ul>
+            <li><span>01</span> Zehn typische Zeitfresser bewerten</li>
+            <li><span>02</span> Automatisierungspotenzial einschätzen</li>
+            <li><span>03</span> Den sinnvollsten ersten Prozess auswählen</li>
+          </ul>
+          <form class="contact-form ads-download-form" action="/contact.php" method="POST" data-conversion-form="lead_magnet" data-download-url="/output/pdf/kmu-automatisierungs-check.pdf">
             <input type="hidden" name="source" value="lead_magnet">
             <input type="hidden" name="message" value="KMU-Automatisierungs-Check heruntergeladen">
             <input type="hidden" name="utm_source" value="">
@@ -235,15 +238,25 @@
             <input type="hidden" name="utm_term" value="">
             <input type="hidden" name="utm_content" value="">
             <input type="hidden" name="gclid" value="">
-            <div class="ads-newsletter__fields">
+            <div class="ads-download-form__fields">
               <div class="contact-form__group"><label class="contact-form__label" for="check-name">Name *</label><input class="contact-form__input" id="check-name" name="name" type="text" autocomplete="name" required placeholder="Vor- und Nachname"></div>
               <div class="contact-form__group"><label class="contact-form__label" for="check-email">E-Mail *</label><input class="contact-form__input" id="check-email" name="email" type="email" autocomplete="email" required placeholder="name@unternehmen.at"></div>
             </div>
             <label class="ads-newsletter-optin"><input type="checkbox" name="newsletter_interest" value="yes"><span>Ja, ich möchte kurze KMU-Prozess-Impulse per E-Mail erhalten. Abmeldung jederzeit möglich.</span></label>
             <div class="ads-honeypot" aria-hidden="true"><label for="check-website">Website</label><input id="check-website" name="website" type="text" tabindex="-1" autocomplete="off"></div>
-            <button type="submit" class="btn btn--secondary contact-form__submit">Checkliste kostenlos herunterladen <span class="btn-arrow">↓</span></button>
+            <button type="submit" class="btn btn--primary contact-form__submit">Checkliste kostenlos herunterladen <span class="btn-arrow">↓</span></button>
             <p class="contact-form__note">Sofortiger Download · Newsletter nur mit Häkchen · <a href="/datenschutz.html">Datenschutz</a></p>
           </form>
+        </div>
+        <div class="ads-leadmagnet__preview reveal reveal--delay-1" aria-label="Vorschau des KMU-Automatisierungs-Checks">
+          <div class="ads-leadmagnet__sheet ads-leadmagnet__sheet--back"></div>
+          <div class="ads-leadmagnet__sheet">
+            <small>10-PUNKTE-SELBSTCHECK</small>
+            <strong>Wo verliert dein Betrieb Zeit?</strong>
+            <div class="ads-leadmagnet__lines"><i></i><i></i><i></i><i></i><i></i></div>
+            <b>____ / 20</b>
+          </div>
+          <span class="ads-leadmagnet__badge">PDF · 2 Seiten</span>
         </div>
       </div>
     </section>
