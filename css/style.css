@@ -8197,6 +8197,8 @@ body::after {
 .ads-case-dashboard > div { display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; }
 .ads-case-dashboard strong { font-size: clamp(3rem, 6vw, 5.5rem); letter-spacing: -0.06em; }
 .ads-case-dashboard span { font-size: 0.68rem; font-weight: 900; letter-spacing: 0.16em; }
+.ads-case-pentanova-logo { width: 100%; height: auto; margin: 0.35rem 0 0.15rem; object-fit: contain; filter: drop-shadow(0 8px 20px rgba(255,255,255,0.08)); }
+.ads-case-dashboard .ads-case-dashboard__location { color: rgba(255,255,255,0.62); font-size: 0.62rem; letter-spacing: 0.18em; }
 .ads-case-dashboard small { color: rgba(255,255,255,0.55); font-size: 0.62rem; letter-spacing: 0.12em; }
 .ads-case-dashboard i { display: block; height: 46px; border: 1px solid rgba(255,255,255,0.08); border-radius: 10px; background: linear-gradient(90deg, rgba(196,215,67,0.18) 62%, rgba(255,255,255,0.035) 62%); }
 .ads-case-dashboard i:nth-of-type(2) { background: linear-gradient(90deg, rgba(196,215,67,0.18) 82%, rgba(255,255,255,0.035) 82%); }
@@ -8205,7 +8207,7 @@ body::after {
 .ads-case__visual--p4 { background: radial-gradient(circle, rgba(56,189,248,0.22), transparent 45%), #061d2a; color: #fff; }
 .ads-case__visual--p4 strong span { color: #38bdf8; }
 .ads-case__visual--cim { background: radial-gradient(circle at 50% 42%, rgba(255,255,255,0.9), transparent 38%), linear-gradient(145deg, #edf3f5, #bfd4dc); }
-.ads-case__visual--cim img { position: relative; z-index: 1; width: min(72%, 310px); height: 230px; object-fit: contain; }
+.ads-case__visual--cim img { position: relative; z-index: 1; width: min(78%, 352px); height: auto; padding: 1.15rem 1.4rem; border: 1px solid rgba(38,61,71,0.08); border-radius: 18px; background: rgba(255,255,255,0.88); box-shadow: 0 22px 55px rgba(38,61,71,0.12); object-fit: contain; }
 .ads-case-flow { position: relative; z-index: 1; display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 0.45rem; padding: 0.7rem; border: 1px solid rgba(30,50,60,0.12); border-radius: 14px; background: rgba(255,255,255,0.58); }
 .ads-case-flow span { padding: 0.42rem 0.55rem; border-radius: 8px; color: #263d47; background: #fff; font-size: 0.62rem; font-weight: 800; }
 .ads-case-flow i { color: #7c3aed; font-style: normal; }
