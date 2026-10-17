@@ -8086,7 +8086,7 @@ body::after {
   background-size: 58px 58px, 58px 58px, auto;
 }
 
-.ads-case-list { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1rem; }
+.ads-case-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(1rem, 2.5vw, 2rem); }
 
 .ads-case {
   position: relative;
@@ -8122,18 +8122,18 @@ body::after {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 1.6rem;
+  padding: clamp(1.6rem, 3vw, 2.5rem);
 }
 
 .ads-case__copy > span { color: #a78bfa; font-size: 0.7rem; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; }
-.ads-case__copy h3 { margin: 0.65rem 0 1rem; font-size: clamp(1.7rem, 2.6vw, 2.45rem); line-height: 1; letter-spacing: -0.045em; }
+.ads-case__copy h3 { margin: 0.65rem 0 1rem; font-size: clamp(2rem, 3.4vw, 3.35rem); line-height: 0.96; letter-spacing: -0.05em; }
 .ads-case__impact { display: flex; flex-wrap: wrap; gap: 0.45rem; margin: 0 0 1rem; }
 .ads-case__impact strong { padding: 0.4rem 0.58rem; border: 1px solid rgba(168,85,247,0.26); border-radius: 999px; color: #d8c4ff; background: rgba(124,58,237,0.1); font-size: 0.64rem; letter-spacing: 0.035em; }
 .ads-case__summary { margin: 0; color: rgba(255,255,255,0.58); font-size: 0.88rem; line-height: 1.65; }
 .ads-case__story { display: grid; gap: 0.75rem; margin: 0.5rem 0 1.5rem; }
-.ads-case__story > div { display: grid; grid-template-columns: 92px 1fr; gap: 0.9rem; padding-top: 0.75rem; border-top: 1px solid rgba(255,255,255,0.08); }
+.ads-case__story > div { display: grid; grid-template-columns: 86px 1fr; gap: 1rem; padding-top: 0.9rem; border-top: 1px solid rgba(255,255,255,0.08); }
 .ads-case__story b { color: rgba(255,255,255,0.88); font-size: 0.68rem; letter-spacing: 0.08em; text-transform: uppercase; }
-.ads-case__story p { margin: 0; color: rgba(255,255,255,0.58); font-size: 0.86rem; line-height: 1.55; }
+.ads-case__story p { margin: 0; color: rgba(255,255,255,0.62); font-size: 0.9rem; line-height: 1.6; }
 .ads-case__copy a { width: fit-content; margin-top: 1.35rem; color: #c4a7ff; font-weight: 800; text-decoration: none; }
 
 .ads-case__visual {
@@ -8144,7 +8144,7 @@ body::after {
   justify-content: center;
   gap: 0.65rem;
   order: -1;
-  min-height: 190px;
+  min-height: 270px;
   padding: 1.5rem;
   text-align: center;
 }
@@ -8276,6 +8276,7 @@ body::after {
   .ads-case-list { grid-template-columns: 1fr; }
   .ads-case__copy { padding: 2rem 1.35rem; }
   .ads-case__visual { order: -1; min-height: 220px; }
+  .ads-case__story > div { grid-template-columns: 1fr; gap: 0.4rem; }
   .ads-newsletter__fields { grid-template-columns: 1fr; }
   .ads-footer { padding-bottom: 5.5rem; }
   .ads-footer .container { align-items: flex-start; flex-direction: column; }

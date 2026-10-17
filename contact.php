@@ -77,6 +77,7 @@ function clean(string $value): string {
 
 $name    = mb_substr(clean((string)($_POST['name'] ?? '')), 0, 200);
 $email   = trim((string)($_POST['email'] ?? ''));
+$phone   = mb_substr(clean((string)($_POST['phone'] ?? '')), 0, 100);
 $company = mb_substr(clean((string)($_POST['company'] ?? '')), 0, 200);
 $branch  = mb_substr(clean((string)($_POST['branch'] ?? '')), 0, 100);
 $message = mb_substr(trim((string)($_POST['message'] ?? '')), 0, MAX_LEN);
@@ -91,6 +92,10 @@ $newsletterInterest = (string)($_POST['newsletter_interest'] ?? '') === 'yes';
 
 if ($name === '' || $email === '') {
     fail(422, 'Name und E-Mail sind Pflichtfelder.');
+}
+
+if ($source === 'google_ads_landingpage' && $phone === '') {
+    fail(422, 'Name, E-Mail und Telefonnummer sind Pflichtfelder.');
 }
 
 if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
@@ -116,6 +121,7 @@ $subject = match ($source) {
 $body  = "Neue Anfrage über das Kontaktformular:\n\n";
 $body .= "Name: {$name}\n";
 $body .= "E-Mail: {$email}\n";
+$body .= "Telefon: " . ($phone !== '' ? $phone : '-') . "\n";
 $body .= "Unternehmen: " . ($company !== '' ? $company : '-') . "\n";
 $body .= "Branche: {$branchLabel}\n\n";
 $body .= "Nachricht:\n" . ($message !== '' ? $message : '-') . "\n";
