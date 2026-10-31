@@ -8101,6 +8101,9 @@ body::after {
 .ads-regional .regional-trust__layout { grid-template-columns: minmax(0, 1fr) minmax(340px, 0.58fr); }
 .ads-regional .regional-trust__frame { aspect-ratio: 4 / 5; }
 .ads-regional .regional-trust__cta { margin-top: 1.8rem; }
+.ads-regional .section-title { max-width: 660px; font-size: clamp(2.45rem, 3.65vw, 4.1rem); line-height: 1.04; letter-spacing: -0.045em; }
+.ads-regional .section-title > span { display: block; }
+.ads-regional .section-title > span + span { margin-top: 0.12em; }
 
 .ads-problem-grid {
   display: grid;
