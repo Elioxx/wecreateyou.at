@@ -7836,12 +7836,15 @@ body::after {
 }
 
 .ads-hero h1 {
-  max-width: 740px;
+  max-width: 780px;
   margin: 1.5rem 0;
-  font-size: clamp(3rem, 4.8vw, 5.15rem);
-  line-height: 0.98;
-  letter-spacing: -0.055em;
+  font-size: clamp(2.8rem, 4.15vw, 4.55rem);
+  line-height: 1.02;
+  letter-spacing: -0.05em;
 }
+
+.ads-hero h1 > span { display: block; }
+.ads-hero h1 > span + span { margin-top: 0.14em; }
 
 .ads-hero__lead {
   max-width: 710px;
