@@ -89,6 +89,7 @@ $utmTerm     = mb_substr(clean((string)($_POST['utm_term'] ?? '')), 0, 300);
 $utmContent  = mb_substr(clean((string)($_POST['utm_content'] ?? '')), 0, 300);
 $gclid       = mb_substr(clean((string)($_POST['gclid'] ?? '')), 0, 500);
 $newsletterInterest = (string)($_POST['newsletter_interest'] ?? '') === 'yes';
+$fundingCheck = (string)($_POST['funding_check'] ?? '') === 'yes';
 
 if ($name === '' || $email === '') {
     fail(422, 'Name und E-Mail sind Pflichtfelder.');
@@ -133,6 +134,7 @@ $body .= "UTM Term: " . ($utmTerm !== '' ? $utmTerm : '-') . "\n";
 $body .= "UTM Content: " . ($utmContent !== '' ? $utmContent : '-') . "\n";
 $body .= "GCLID: " . ($gclid !== '' ? $gclid : '-') . "\n";
 $body .= "Interesse an KMU-Prozess-Impulsen: " . ($newsletterInterest ? 'Ja' : 'Nein') . "\n";
+$body .= "SFG-Fördermöglichkeit mitprüfen: " . ($fundingCheck ? 'Ja' : 'Nein') . "\n";
 
 // Sichere Header ohne Injection-Risiko: eigene Absenderadresse, Reply-To aus Formular
 $headers = [];

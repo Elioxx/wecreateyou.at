@@ -16,7 +16,7 @@
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/brand/logo-tech-180.png">
   <meta name="theme-color" content="#0a0a0f">
   <link rel="preload" href="/assets/fonts/inter-latin-var.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="/css/style.css?v=20261031e">
+  <link rel="stylesheet" href="/css/style.css?v=20261031f">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -117,6 +117,7 @@
               <label class="contact-form__label" for="ads-message">Welcher Ablauf kostet euch Zeit?</label>
               <textarea class="contact-form__textarea" id="ads-message" name="message" rows="4" placeholder="Zum Beispiel: Anfragen, Angebote, Termine, Baustellendokumentation oder Material …"></textarea>
             </div>
+            <label class="ads-funding-optin"><input type="checkbox" name="funding_check" value="yes"><span><strong>SFG-Fördermöglichkeit mitprüfen</strong><small>Falls das Vorhaben grundsätzlich zu einer aktuellen Förderung passen könnte.</small></span></label>
             <div class="ads-honeypot" aria-hidden="true"><label for="ads-website">Website</label><input id="ads-website" name="website" type="text" tabindex="-1" autocomplete="off"></div>
             <button type="submit" class="btn btn--primary contact-form__submit">8h-Zeitpotenzial prüfen <span class="btn-arrow">→</span></button>
             <p class="contact-form__note" id="contact-form-note">Unverbindlich · Antwort innerhalb von 24 Stunden · <a href="/datenschutz.html">Datenschutz</a></p>
@@ -174,6 +175,29 @@
           </div>
           <figcaption><span>WECREATEYOU / GRAZ</span><strong><i></i> Regional verwurzelt. Digital voraus.</strong></figcaption>
         </figure>
+      </div>
+    </section>
+
+    <section class="ads-funding" id="foerder-check" aria-labelledby="foerder-check-title">
+      <div class="container">
+        <article class="ads-funding__card reveal">
+          <div class="ads-funding__badge" aria-hidden="true"><span>SFG</span><small>FÖRDER-CHECK<br>2026</small></div>
+          <div class="ads-funding__content">
+            <span class="section-label">Noch 2026 prüfen</span>
+            <h2 id="foerder-check-title">Könnte dein Digitalisierungsprojekt <span class="text-gradient">förderfähig sein?</span></h2>
+            <p>Für bestimmte steirische Kleinstbetriebe aus Gewerbe und Handwerk kann die SFG-Aktion <strong>Lebens!Nah</strong> Digitalisierungsprojekte unterstützen. Wir prüfen vorab kostenlos, ob dein Vorhaben grundsätzlich zu den aktuellen Kriterien passen könnte.</p>
+            <div class="ads-funding__facts" aria-label="Eckdaten der SFG-Förderung Lebens!Nah">
+              <div><strong>30&nbsp;%</strong><span>Basisförderung</span></div>
+              <div><strong>bis 2.500&nbsp;€</strong><span>möglicher Zuschuss</span></div>
+              <div><strong>vor Start</strong><span>Antrag einreichen</span></div>
+            </div>
+            <div class="ads-funding__actions">
+              <a href="#prozess-check" class="btn btn--primary" data-track-cta="funding_check">Projekt &amp; Förderung prüfen <span class="btn-arrow">→</span></a>
+              <a href="https://www.sfg.at/f/nahversorgung-grosse-investitionen/" class="ads-funding__source" target="_blank" rel="noopener noreferrer">Offizielle SFG-Informationen ↗</a>
+            </div>
+            <small class="ads-funding__note">Unverbindliche Vorprüfung durch WeCreateYou. Förderfähigkeit und Förderentscheidung liegen ausschließlich bei der SFG. Laut SFG: mindestens 3.000&nbsp;€ Projektvolumen; Antrag vor Projektbeginn; weitere Voraussetzungen gelten.</small>
+          </div>
+        </article>
       </div>
     </section>
 
