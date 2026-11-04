@@ -62,7 +62,7 @@ function initNavigation() {
 
 /* ---------- Campaign Attribution & Conversion Events ---------- */
 function initCampaignAttribution() {
-  const fields = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content', 'gclid'];
+  const fields = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content', 'utm_id', 'gclid'];
   const params = new URLSearchParams(window.location.search);
   let attribution = {};
 
@@ -71,6 +71,9 @@ function initCampaignAttribution() {
   } catch (e) {
     attribution = {};
   }
+
+  // A new campaign visit replaces older attribution instead of mixing ads.
+  if (fields.some((field) => params.has(field))) attribution = {};
 
   fields.forEach((field) => {
     const value = params.get(field);
@@ -430,6 +433,10 @@ document.addEventListener('submit', (e) => {
     .then((response) => response.json().catch(() => ({ ok: false, error: 'Unerwartete Antwort vom Server.' })))
     .then((data) => {
       if (!data.ok) throw new Error(data.error || 'Die Nachricht konnte nicht gesendet werden.');
+
+      if (data.lead_accepted === true) {
+        form.dispatchEvent(new CustomEvent('wcy:lead-success', { bubbles: true, detail: { formName: form.getAttribute('data-conversion-form') || 'contact_form' } }));
+      }
 
       btn.innerHTML = downloadUrl
         ? '<span style="display:inline-flex;align-items:center;gap:8px;">✓ Download startet...</span>'

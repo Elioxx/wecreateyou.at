@@ -87,6 +87,7 @@ $utmMedium   = mb_substr(clean((string)($_POST['utm_medium'] ?? '')), 0, 200);
 $utmCampaign = mb_substr(clean((string)($_POST['utm_campaign'] ?? '')), 0, 200);
 $utmTerm     = mb_substr(clean((string)($_POST['utm_term'] ?? '')), 0, 300);
 $utmContent  = mb_substr(clean((string)($_POST['utm_content'] ?? '')), 0, 300);
+$utmId = mb_substr(clean((string)($_POST['utm_id'] ?? '')), 0, 200);
 $gclid       = mb_substr(clean((string)($_POST['gclid'] ?? '')), 0, 500);
 $newsletterInterest = (string)($_POST['newsletter_interest'] ?? '') === 'yes';
 $fundingCheck = (string)($_POST['funding_check'] ?? '') === 'yes';
@@ -114,7 +115,7 @@ $branchLabels = [
 $branchLabel = $branchLabels[$branch] ?? ($branch !== '' ? $branch : '-');
 
 $subject = match ($source) {
-    'google_ads_landingpage' => 'Neue Google-Ads-Anfrage über wecreateyou.at',
+    'google_ads_landingpage' => 'Neue Prozess-Check-Anfrage über wecreateyou.at',
     'lead_magnet' => 'Neuer Download: KMU-Automatisierungs-Check',
     default => 'Neue Kontaktanfrage über wecreateyou.at',
 };
@@ -131,7 +132,14 @@ $body .= "UTM Source: " . ($utmSource !== '' ? $utmSource : '-') . "\n";
 $body .= "UTM Medium: " . ($utmMedium !== '' ? $utmMedium : '-') . "\n";
 $body .= "UTM Campaign: " . ($utmCampaign !== '' ? $utmCampaign : '-') . "\n";
 $body .= "UTM Term: " . ($utmTerm !== '' ? $utmTerm : '-') . "\n";
+$creativeLabels = [
+    'serienmotiv' => 'Serienmotiv – Weniger abtippen',
+    'prozesscheck' => 'WeCreateYou – Kostenloser Prozess-Check',
+];
+$creativeLabel = $creativeLabels[$utmContent] ?? ($utmContent !== '' ? $utmContent : 'Nicht zugeordnet');
+$body .= "Anzeigenmotiv: {$creativeLabel}\n";
 $body .= "UTM Content: " . ($utmContent !== '' ? $utmContent : '-') . "\n";
+$body .= "UTM ID: " . ($utmId !== '' ? $utmId : '-') . "\n";
 $body .= "GCLID: " . ($gclid !== '' ? $gclid : '-') . "\n";
 $body .= "Interesse an KMU-Prozess-Impulsen: " . ($newsletterInterest ? 'Ja' : 'Nein') . "\n";
 $body .= "SFG-Fördermöglichkeit mitprüfen: " . ($fundingCheck ? 'Ja' : 'Nein') . "\n";
@@ -148,4 +156,4 @@ if (!$sent) {
     fail(500, 'Die Nachricht konnte nicht versendet werden. Bitte versuche es später erneut oder schreibe direkt an office@wecreateyou.at.');
 }
 
-echo json_encode(['ok' => true]);
+echo json_encode(['ok' => true, 'lead_accepted' => true]);
