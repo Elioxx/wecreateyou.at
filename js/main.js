@@ -467,7 +467,9 @@ document.addEventListener('submit', (e) => {
         btn.innerHTML = originalHTML;
         btn.style.background = '';
         btn.disabled = false;
+        const hiddenValues = Array.from(form.querySelectorAll('input[type="hidden"]')).map(input => [input, input.value]);
         form.reset();
+        hiddenValues.forEach(([input, value]) => { input.value = value; });
         if (note) note.innerHTML = originalNoteHTML;
       }, 3000);
     })
